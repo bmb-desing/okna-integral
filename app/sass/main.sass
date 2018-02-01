@@ -1,0 +1,1002 @@
+@import 'smart-grid'
+@import 'fonts'
+@import 'vars'
+@import 'libs'
+
++reset()
+
+body
+  font-family: $default-font
+  a
+  	text-decoration: none
+  	color: #e7e7e7
+
+.main
+	+wrapper()
+	min-width: 340px
+	margin: 0
+	padding: 0
+
+.active__menu--li
+	a
+		position: relative
+		color: #dc3236
+		transition: all .5s
+		&:after
+			position: absolute
+			content: '\2039'
+			transform: rotate(90deg) !important
+
+h6
+	font-family: MC-900
+	span
+		font-family: MC-900
+
+.li__topmenu a
+	position: relative
+	&:after
+		position: absolute
+		content: '\2039'
+		transform: rotate(-90deg)
+		margin-left: 10px
+
+#phone
+	font-size: 25px
+
+
+.header__bcg
+	background-image: url(../img/header__fon.jpg)
+.header__mans
+	background-image: url(../img/headmas.jpg)
+.header__metall
+	background-image: url(../img/headermetall.jpg)
+.header__plastic
+	background-image: url(../img/plasticwindow.jpg)
+.header__plsotkos
+	background-image: url(../img/plsotkos.jpg)
+
+.mans--bcg
+		background-image: url(../img/mansabout.jpg)
+.metall--bcg
+	background-image: url(../img/metall.jpg)
+.plastic--bcg
+	background-image: url(../img/plastickyxn.jpg)
+.plsotk1--bcg
+	background-image: url(../img/plsotk1.jpg)
+.plsotk2--bcg
+	background-image: url(../img/plsotk2.jpg)
+
+//PLS Otkosi
+.owl-dots
+	text-align: center
+	padding-top: 50px
+	.owl-dot
+		margin-right: 20px
+		border: 1px solid white
+		border-radius: 50%
+		width: 30px
+		height: 30px
+		display: inline-block
+		text-align: center
+		position: relative
+		&.active
+			position: relative
+			&:after
+				content: ''
+				position: absolute
+				width: 15px
+				height: 15px
+				left: 7.5px
+				top: 7px
+				border-radius: 50%
+				background-color: white
+
+
+.otkos__wrap
+	margin: 0 auto
+	max-width: 1170px
+	position: relative
+	.owl-nav
+		opacity: 0.6
+		color: white
+		font-size: 30px
+		position: absolute
+		width: 100%
+		top: 30px
+		.owl-prev
+			position: absolute
+			left: 0
+		.owl-next
+			position: absolute
+			right: 0
+
+
+
+.header__container--plsotkos
+	padding-top: 170px
+	padding-bottom: 220px
+	h2
+		text-align: center
+		color: white
+		font-family: MC-900
+		font-size: 44px
+		line-height: 48px
+		text-transform: uppercase
+		padding-bottom: 15px
+
+.header__containerpls--skidka
+	font-family: MC-700;
+	line-height: 48px
+	color: white
+	font-size: 36px
+	text-align: center
+	text-transform: uppercase
+	padding-bottom: 50px
+	display: block
+	span
+		color: #ef3f43
+		font-size: 36px
+
+.plsotkos2__wrap
+	+row-flex()
+	+align-items(center)
+	margin: 0
+	.plsotk2--bcg
+		+col()
+		+col-6()
+		margin: 0
+		position: relative
+		background-position: center
+		background-size: 100% 100%
+		height: 350px
+		margin-right: 50px
+		margin-left: 30px
+		&:after
+			position: absolute
+			content: ''
+			top: 30px
+			height: 100%
+			left: -30px
+			bottom: 0
+			right: 0
+			width: 100%
+			background-color: #252f3a
+			z-index: -1
+.plsotkos__info
+	font-family: MC-700
+	font-size: 18px
+	line-height: 22px
+	text-transform: uppercase
+	color: #262626
+	padding-bottom: 25px
+	text-align: center
+	max-width: 672px
+	margin: 0 auto
+	span
+		color: #ed4044
+//
+
+	//Mansardn
+
+.header__container--mans
+	padding-top: 170px
+	padding-bottom: 220px
+	h2
+		text-align: center
+		color: white
+		font-family: MC-900
+		font-size: 44px
+		line-height: 48px
+		text-transform: uppercase
+		padding-bottom: 45px
+	
+.header__container--btn
+		text-align: center
+		padding-bottom: 30px
+		button
+			background-color: #ed1f24
+			padding: 20px 100px
+			border: none
+			font-size: 15px
+			text-transform: uppercase
+			color: #fac3c5
+			cursor: pointer
+
+//
+
+.mans__wrap--metall, .plsotkos__wrap
+	+align-items(center)
+
+.metall__cloud
+	background-image: url(../img/mettallcloud.jpg)
+	background-position: center
+	background-size: cover
+	padding: 80px 0
+	h4
+		color: #cc313c
+		font-family: MC-900
+		font-size: 18px
+		line-height: 22px
+		text-transform: uppercase
+		text-align: center
+		padding-bottom: 50px
+	.metallcl__wrap
+		+row-flex()
+		+justify-content(space-between)
+		margin: 0 auto
+		max-width: 1170px
+		div
+			+col()
+			+col-4()
+			margin: 0
+			color: #262626
+			font-family: MC-500
+			font-size: 15px
+			line-height: 22px
+			text-align: center
+
+.metall__window
+	padding-top: 60px
+	padding-bottom: 75px
+	.metallwindow__wrap
+		+row-flex()
+		+justify-content(space-between)
+		+align-items(center)
+		margin: 0 auto
+		max-width: 1170px
+		.metallwindow__img
+			+col()
+			+col-3()
+			margin: 0
+		.metallwindow__discript
+			+col()
+			+col-6()
+			margin: 0
+			padding-top: 50px
+			p
+				font-family: MC-700
+				font-size: 15px
+				line-height: 22px
+				text-transform: uppercase
+				color: #1e1e1e
+				padding-bottom: 25px
+				span
+					color: #dc313c
+	//
+
+.mans__about
+	padding-top: 85px
+	padding-bottom: 80px
+	.mans__wrap
+		+row-flex()
+		margin: 0 auto
+		max-width: 1170px
+		padding-bottom: 70px
+		.mans__left
+			+col()
+			+col-5()
+			margin: 0
+			span
+				color: #262626
+				font-family: MC-900
+				font-size: 26px
+				text-transform: uppercase
+				display: inline-block
+			p
+				margin-top: 15px
+				color: #262626;
+				font-family: MC-700
+				font-size: 15px
+				line-height: 22px
+		.overlay__right--bcg
+			+col()
+			+col-6()
+			margin: 0
+			margin-left: 50px
+			position: relative
+			background-position: center
+			background-size: 100% 100%
+			height: 350px
+			&:after
+				position: absolute
+				content: ''
+				top: 30px
+				height: 100%
+				left: 30px
+				bottom: 0
+				right: 0
+				width: 100%
+				background-color: #252f3a
+				z-index: -1
+			img
+				max-width: 100%
+				height: auto
+				max-height: 350px
+
+	//
+
+.header
+	background-size: cover
+	background-position: center
+	&__wrap
+		background-color: #2c3844
+	&__menu
+		+justify-content(space-between)
+		+row-flex()
+		margin: 0 auto
+		max-width: 1170px
+		background-color: #2c3844
+		padding-top: 10px
+		position: relative
+		.menu__left
+			+row-flex()
+			+justify-content(space-between)
+			margin: 0
+			padding: 0
+			position: relative
+			.header__logo
+				margin-right: 18px
+			ul li
+				display: inline-block
+				vertical-align: top
+				&:first-child
+					margin-right: 15px
+				a
+					text-transform: uppercase
+					font-family: 'MC-100'
+					font-size: 14px
+					margin-right: 26px
+					padding-top: 45px
+					padding-bottom: 45px
+					cursor: pointer
+					position: relative
+					display: block
+				.topmenu__last
+					margin-right: 0
+			.logo__img
+				display: inline-block
+				margin-right: 20px
+		.menu__right
+			ul
+				+row-flex()
+				+justify-content(space-between)
+				padding-top: 40px
+				margin-left: 20px
+				li
+					display: inline-block
+					position: relative
+					margin-right: 20px
+					opacity: 1
+					line-height: 18px
+					color: white
+					font-size: 18px
+					a.header__icons
+						width: 30px
+						height: 30px
+						border-radius: 50%
+						border: 1px solid #db2127
+						position: relative
+						display: inline-block
+					.fa:before
+						position: absolute
+						top: 5px
+						left: 5px
+
+					span:nth-child(3)
+						color: #f6f6f6
+						font-size: 12px
+						float: right
+					span
+						white-space: nowrap
+
+.header__container
+	+offset-padding(2)
+	margin-top: 130px
+	text-transform: uppercase
+	h4
+		color: black
+		font-family: MC-500
+		font-size: 37px
+	h2
+		color: #e9e9e9
+		font-family: MC-900
+		font-size: 72px
+		background-color: #ed1f24
+		display: inline-block
+		padding: 5px
+		margin-bottom: 25px
+	h5
+		color: #121212
+		font-family: MC-300
+		font-size: 36px
+		margin-bottom: 55px
+	button
+		background-color: #ed1f24
+		padding: 20px 40px
+		border: none
+		font-size: 15px
+		text-transform: uppercase
+		color: #fac3c5
+		cursor: pointer
+		margin-bottom: 115px
+
+.job
+	margin-top: 80px
+	+offset-padding(1)
+	span
+		&:first-child
+			text-transform: uppercase
+			text-align: center
+			color: #24323e
+			font-size: 15px
+			display: block
+	h6
+		text-transform: uppercase
+		font-size: 26px
+		color: #e95d62
+		text-align: center
+		margin-top: 20px
+		margin-bottom: 10px
+	.job--second
+			text-transform: uppercase
+			color: #262626
+			font-size: 26px
+			text-align: center
+			display: block
+			font-weight: bold
+
+.products
+		+row-flex()
+		+justify-content(center)
+		+align-items(flex-start)
+		margin: 0
+		margin-top: 45px
+		padding: 0
+		text-align: center
+		&__item
+			+col()
+			+col-4()
+			margin: 0
+			padding: 0
+			span
+				display: block
+				margin-top: 10px
+				text-transform: uppercase
+				color: #292929
+				font-family: MuseoSansCyrl
+				font-size: 18px
+
+.job__discript
+	+col()
+	+col-12()
+	margin: 0 auto
+	margin: 0
+	margin-top: 80px
+	.first__part
+		display: flex
+		align-items: center
+		margin-bottom: 100px
+		.owl-carousel
+			margin: 0
+			width: 73%
+			.owl__wrap
+				margin: 0
+				display: flex
+				align-items: center
+				.workman
+					width: 49%
+					background-image: url(../img/work__man.jpg)
+					background-size: cover
+					background-position: center
+					background-repeat: no-repeat
+					height: 520px
+					margin: 0
+					display: inline-block
+				.comp__history
+					width: 49%
+					display: inline-block
+					margin-left: 1%
+				h3
+					font-family: MC-700
+					text-transform: uppercase
+					color: #e95d62
+					font-size: 48px
+				h6
+					text-transform: uppercase
+					color: #262626
+					font-size: 36px
+					text-align: left
+					margin-top: 10px
+				p
+					margin-top: 20px
+					color: #292929;
+					font-family: "Myriad Pro"
+					font-size: 15px
+					font-weight: 400
+					line-height: 22px
+				.read__more
+					display: inline-block
+					margin-top: 25px
+					text-align: left
+					font-size: 12px
+					line-height: 22px
+					color: #d94040
+					cursor: pointer
+					span
+						text-transform: lowercase
+						display: inline-block
+						font-size: 12px
+						line-height: 22px
+						color: #2f2f2f
+				i
+					margin-left: 10px
+					display: inline-block
+					cursor: pointer
+					color: #a5a5a5
+
+		.our__service
+			width: 23%
+			display: inline-block
+			margin: 0
+			background-color: #34495d
+			text-transform: uppercase
+			padding: 50px 15px 50px 20px
+			h6
+				font-size: 26px
+				color: #f6f6f6
+				display: inline-block
+				text-align: left
+				span
+					color: #e95d62
+					font-size: 26px
+					display: inline
+			span
+				display: block
+				color: #cdcdcd
+				font-size: 18px
+				padding-bottom: 75px
+			.service__button
+				text-align: center
+				color: #f2f2f2
+				font-size: 15px
+				.back
+					display: inline-block
+					padding: 10px
+					&:hover, &:hover a
+						background-color: white
+						color: black
+					a
+						margin-right: 10px
+						position: relative
+						cursor: pointer
+					i
+						margin-right: 5px
+				.forward
+					display: inline-block
+					padding: 10px
+					&:hover, &:hover a
+						background-color: white
+						color: black
+					a
+						margin-left: 10px
+						position: relative
+						cursor: pointer
+					i
+						margin-left: 5px
+				
+.advantage
+	+offset-padding(1)
+	padding-top: 60px
+	padding-bottom: 120px
+	background-image: url(../img/ops.jpg)
+	background-position: center
+	position: relative
+	.adv__wrap
+		z-index: 3
+		position: relative
+		h6
+			font-family: MuseoSansCyrl
+			font-size: 26px
+			text-transform: uppercase
+			color: whitesmoke
+			text-align: center
+			span
+				color: #f55358
+		.products
+			z-index: 2
+			&__item img
+				height: 66px	
+			span
+				color: white
+
+.dostavka
+	+offset-padding(2)
+	z-index: 3
+	padding-bottom: 50px
+	padding-top: 75px
+	background-image: url(../img/dostavka__fon.jpg)
+	background-position: center
+	background-size: cover
+	&__wrap
+		+row-flex()
+		.dostavka__carefull
+			+col()
+			+col-6()
+			margin-left: 10px
+			text-transform: uppercase
+			font-size: 26px
+			h6
+				color: #e03d3d
+				font-family: MC-700
+			span
+				color: #262626
+		.dostavka__constr
+			+col()
+			+col-6()
+			p
+				font-size: 15px
+				line-height: 22px
+				color: #131313
+				span
+					color: #e03d36
+	.dostavka__plus
+		+row-flex()
+		+justify-content(space-between)
+		margin: 0
+		margin-top: 45px
+		padding-bottom: 80px
+		text-transform: uppercase
+		.plus__block
+			+col()
+			+col-4()
+			margin: 0
+			margin-right: 10px
+			position: relative
+			font-family: MC-500
+			&:nth-child(2)
+				margin-left: 45px
+			.kvadrat
+				position: absolute
+				left: 0
+				top: -15px
+				width: 80px
+				height: 80px
+				border: 10px solid #596d80
+				z-index: 1
+			span
+				color: #262626
+				display: inline-block
+				font-size: 18px
+				line-height: 25px
+				background-color: white
+				position: relative
+				z-index: 2
+				left: 20px
+				padding: 0 5px
+	.map
+		background-image: url(../img/krim.png)
+		background-position: center
+		background-size: contain
+		background-repeat: no-repeat
+		min-height: 600px
+
+.news
+	padding-top: 70px
+	padding-bottom: 80px
+	h6
+		font-size: 26px
+		text-align: center
+		text-transform: uppercase
+		font-family: MC-900
+		color: #db4042
+		span
+			color: #262626
+			font-family: MC-900
+	&__wrap
+		+offset-padding(1)
+		+row-flex()
+		+justify-content(center)
+		margin: 0
+		margin-top: 50px
+		.news__block
+			+col()
+			+col-3()
+			margin: 0
+			margin-right: 50px
+			background-color: #efefef
+			.block__img
+				background-image: url(../img/news1.jpg)
+				background-position: center
+				background-size: 100% 100%
+				background-repeat: no-repeat
+				min-height: 218px
+			.block__other
+				padding: 30px 25px 50px 25px
+				.other__first
+					text-transform: uppercase
+					color: #262626
+					font-family: MC-500
+					font-size: 18px
+					display: block
+					padding-bottom: 10px
+				.other__date
+					color: #262626
+					font-size: 12px
+				.other__discript
+					margin-top: 10px
+					margin-bottom: 30px
+					color: #141414
+					font-family: MC-500
+					font-size: 15px
+				.read__all
+					color: #2f2f2f
+					cursor: pointer
+					font-size: 12px
+					line-height: 22px
+					span
+						color: #d94040
+					.fa
+						font-size: 14px
+						color: grey
+						margin-left: 5px
+
+.partners
+	padding-top: 85px
+	padding-bottom: 80px
+	background-image: url(../img/partners.jpg)
+	background-position: center
+	background-size: 100% 100%
+	h6
+		text-transform: uppercase
+		text-align: center
+		font-size: 26px
+		color: #d83537
+		margin-bottom: 55px
+		span
+			color: #e6e6e6
+	&__wrap
+		+offset-padding(2)
+		+row-flex()
+		+justify-content(center)
+		+align-items(center)
+		margin: 0
+		div
+			+col()
+			+col-3()
+			margin: 0
+
+.contacts
+	padding-top: 80px
+	+offset-padding(2)
+	padding-bottom: 40px
+	&__wrap
+		+row-flex()
+		margin: 0
+		.contacts__about
+			+col()
+			+col-5()
+			margin: 0
+			text-align: left
+			h6
+				text-transform: uppercase
+				font-size: 26px
+				color: #d83537
+				margin-bottom: 25px
+				font-family: MC-900
+			span
+				color: black
+			.cont__block
+				.cont__name
+					text-transform: uppercase
+					color: #0c0c0c
+					font-size: 18px
+					line-height: 25px
+					display: block
+					margin-top: 25px
+					margin-bottom: 15px
+					font-family: MC-900
+				span
+					color: #0c0c0c
+					font-size: 15px
+					line-height: 25px
+					display: block
+					margin-bottom: 10px
+					font-family: MC-700
+					.fa
+						color: #e03d3d
+						margin-right: 7px
+						font-size: 20px
+			.cont__time
+				span
+					color: #0c0c0c
+					font-size: 15px
+					line-height: 25px
+					display: block
+					margin-bottom: 10px
+					font-family: MC-700
+				.time__regim
+					text-transform: uppercase
+					color: #0c0c0c
+					font-size: 18px
+					line-height: 25px
+					display: block
+					margin-top: 25px
+					margin-bottom: 15px
+					font-family: MC-900
+		.cont__client
+			+col()
+			+col-5()
+			margin: 0
+			+offset-left(2)
+			text-align: left
+			.form__error
+				text-transform: uppercase
+				font-family: MC-900
+				font-size: 22px
+				color: #f55358
+				display: none
+				margin-top: 10px
+			span
+				font-family: MC-700
+				font-size: 18px
+				text-transform: uppercase
+				color: #787878
+				span
+					color: #d83537
+			p
+				color: #787878
+				font-family: MC-500
+				font-size: 15px
+				margin-top: 18px
+				margin-bottom: 50px
+			h6
+				font-family: MC-900
+				font-size: 18px
+				line-height: 25px
+				color: #d83537
+				text-transform: uppercase
+				margin-bottom: 26px
+				text-align: center
+				span
+					color: #0c0c0c
+			form
+				input[type="text"]
+					display: block
+					width: 100%
+					padding: 15px
+					border: 1px solid black
+				textarea
+					width: 100%
+					padding: 15px
+					border: 1px solid black
+					resize: none
+				input[type="submit"]
+					display: block
+					text-transform: uppercase
+					background-color: #ed1f24
+					color: #f5888a
+					font-family: MC-500
+					font-size: 15px
+					line-height: 25px
+					border: none
+					width: 100%
+					margin-top: 40px
+					padding: 20px
+
+.integral
+	padding-top: 370px
+	padding-bottom: 130px
+	background-image: url(../img/integmap.jpg)
+	background-position: center
+	background-size: 100% 100%
+	background-repeat: no-repeat
+	h1
+		font-size: 150px
+		line-height: 22px
+		text-transform: uppercase
+		font-family: MC-900
+		text-align: center
+		color: #cb3133
+	&__soc
+		text-align: center
+		margin-top: 100px
+		span
+			color: white
+			font-family: MC-700
+			font-size: 18px
+			line-height: 25px
+			text-transform: uppercase
+			display: inline-block
+			margin-bottom: 30px
+		ul
+			li
+				display: inline-block
+				text-align: center
+				margin-right: 50px
+				height: 40px
+				width: 40px
+				border: 1px solid #c4c7c8
+				border-radius: 50%
+				position: relative
+				cursor: pointer
+				&:first-child
+					.fa
+						left: 13px
+				&:nth-child(3)
+					.fa
+						left: 8px
+				.fa
+					color: white
+					font-size: 20px
+					position: absolute
+					top: 9px
+					left: 10px
+
+.int__options
+	+offset-padding(2)
+	background-color: #34495d
+	padding-top: 30px
+	padding-bottom: 50px
+	.opt__wrap
+		+row-flex()
+		+justify-content(space-between)
+		margin: 0
+		.opt__ul
+			+col()
+			+col-3()
+			margin: 0
+			ul
+				li
+					color: #ffffff
+					list-style-type: square
+					font-size: 15px
+					line-height: 26px
+
+.footer
+	background-color: #1e2e3d
+	+offset-padding(2)
+	padding-top: 30px
+	padding-bottom: 20px
+	&__wrap
+		+row-flex()
+		+justify-content(space-between)
+		margin: 0
+		.foot__logo
+			+col()
+			+col-3()
+			margin: 0
+		.wrap__prava
+			+col()
+			+col-6()
+			margin: 0
+			padding-top: 65px
+			h6
+				color: #e2e2e2
+				font-family: MC-700
+				font-size: 18px
+				line-height: 26px
+				text-transform: uppercase
+				text-align: center
+			span
+				color: #aeb2b6
+				font-size: 12px
+				line-height: 26px
+				text-align: center
+				display: block
+				margin-top: 6px
+		.wrap__contact
+			+col()
+			+col-3()
+			margin: 0
+			color: #d2d2d2
+			padding-top: 65px
+			.phone
+				line-height: 30px
+				font-size: 24px
+				display: block
+			.mail
+				font-size: 18px
+
+
+
+@import 'media'
