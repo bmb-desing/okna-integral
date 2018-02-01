@@ -3490,28 +3490,8 @@ h6 span {
   margin-left: 10px;
 }
 
-#phone {
+.phone {
   font-size: 25px;
-}
-
-.header__bcg {
-  background-image: url(../img/header__fon.jpg);
-}
-
-.header__mans {
-  background-image: url(../img/headmas.jpg);
-}
-
-.header__metall {
-  background-image: url(../img/headermetall.jpg);
-}
-
-.header__plastic {
-  background-image: url(../img/plasticwindow.jpg);
-}
-
-.header__plsotkos {
-  background-image: url(../img/plsotkos.jpg);
 }
 
 .owl-dots {
@@ -3865,7 +3845,7 @@ h6 span {
   line-height: 22px;
 }
 
-.mans__about .mans__wrap .overlay__right--bcg {
+.mans__about .mans__wrap .mans__image {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin-left: 15px;
@@ -3879,9 +3859,25 @@ h6 span {
   background-position: center;
   background-size: 100% 100%;
   height: 350px;
+  -webkit-box-shadow: 40px 40px 0 #252f3a;
+  box-shadow: 40px 40px 0 #252f3a;
 }
 
-.mans__about .mans__wrap .overlay__right--bcg:after {
+.mans__about .mans__wrap .mans__image__second {
+  -webkit-box-shadow: -40px 40px 0 #252f3a;
+  box-shadow: -40px 40px 0 #252f3a;
+  margin-right: 50px;
+  margin-left: 0;
+}
+
+.mans__about .mans__wrap .mans__image__second img {
+  max-width: 100%;
+  height: 100%;
+  max-height: 350px;
+  display: block;
+}
+
+.mans__about .mans__wrap .mans__image__second img:after {
   position: absolute;
   content: '';
   top: 30px;
@@ -3891,13 +3887,6 @@ h6 span {
   right: 0;
   width: 100%;
   background-color: #252f3a;
-  z-index: -1;
-}
-
-.mans__about .mans__wrap .overlay__right--bcg img {
-  max-width: 100%;
-  height: 100%;
-  max-height: 350px;
 }
 
 .header {
@@ -3958,10 +3947,6 @@ h6 span {
   vertical-align: top;
 }
 
-.header__menu .menu__left ul li:first-child {
-  margin-right: 15px;
-}
-
 .header__menu .menu__left ul li a {
   text-transform: uppercase;
   font-family: 'MC-100';
@@ -4018,13 +4003,9 @@ h6 span {
   border-radius: 50%;
   border: 1px solid #db2127;
   position: relative;
+  text-align: center;
+  line-height: 29px;
   display: inline-block;
-}
-
-.header__menu .menu__right ul li .fa:before {
-  position: absolute;
-  top: 5px;
-  left: 5px;
 }
 
 .header__menu .menu__right ul li span:nth-child(3) {
@@ -4042,7 +4023,7 @@ h6 span {
   padding-left: calc(16.66667% + 15px);
   padding-right: -webkit-calc(16.66667% + 15px);
   padding-right: calc(16.66667% + 15px);
-  margin-top: 130px;
+  padding-top: 130px;
   text-transform: uppercase;
 }
 

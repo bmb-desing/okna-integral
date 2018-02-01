@@ -1,5 +1,5 @@
 
-$(function(){
+$('document').ready(function() {
 	$('li.li__topmenu').click(function() {
 		$('li.li__topmenu').removeClass('active__menu--li')
 		$(this).addClass('active__menu--li');
@@ -48,34 +48,16 @@ $(function(){
 })
 
 var owl = $('.owl-carousel');
-owl.owlCarousel();
-// Go to the next item
 $('.forward').click(function() {
     owl.trigger('next.owl.carousel');
 })
-// Go to the previous item
 $('.back').click(function() {
-    // With optional speed parameter
-    // Parameters has to be in square bracket '[]'
     owl.trigger('prev.owl.carousel', [300]);
 })
 
-$("#phone").mask("+ 9(999)999-9999");
-   
-
+$(".phone").mask("+ 9(999)999-9999");
 
 });
-
-function submitBut() {
-	let textar = document.querySelector('textarea').value
-	let elem = document.querySelector('.form__error')
-	if(textar.length < 10) {
-	elem.style.display = 'block'
-	return false
-	} else {
-		elem.style.display = 'none'
-	}
-}
 
 function validateForm() {
     let textar = document.querySelector('textarea').value
@@ -88,3 +70,4 @@ function validateForm() {
 			return true;
 	}
 }
+	
