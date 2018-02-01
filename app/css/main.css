@@ -4024,6 +4024,7 @@ h6 span {
   padding-right: -webkit-calc(16.66667% + 15px);
   padding-right: calc(16.66667% + 15px);
   padding-top: 130px;
+  padding-bottom: 50px;
   text-transform: uppercase;
 }
 
@@ -4184,11 +4185,7 @@ h6 span {
 
 .job__discript .first__part .owl-carousel .owl__wrap .workman {
   width: 49%;
-  background-image: url(../img/work__man.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 520px;
+  padding-top: 40px;
   margin: 0;
   display: inline-block;
 }
