@@ -26,9 +26,8 @@ input, button, textarea
 		color: #dc3236
 		transition: all .5s
 		&:after
-			position: absolute
-			content: '\2039'
-			transform: rotate(90deg) !important
+			color: #dc3236
+
 
 h6
 	font-family: MC-900
@@ -44,9 +43,11 @@ h6
 		margin-left: 10px
 
 //PLS Otkosi
+
 .owl-dots
 	text-align: center
-	padding-top: 50px
+	position: relative
+	bottom: 150px
 	.owl-dot
 		margin-right: 20px
 		border: 1px solid white
@@ -73,19 +74,22 @@ h6
 	margin: 0 auto
 	max-width: 1170px
 	position: relative
-	.owl-nav
-		opacity: 0.6
-		color: white
-		font-size: 30px
+
+.owl-nav
+	opacity: 0.6
+	color: white
+	font-size: 30px
+	max-width: 1170px
+	margin: 0 auto
+	position: relative
+	text-align: center
+	width: 100%
+	bottom: 440px
+	.owl-prev
 		position: absolute
-		width: 100%
-		top: 30px
-		.owl-prev
-			position: absolute
-			left: 0
-		.owl-next
-			position: absolute
-			right: 0
+	.owl-next
+		position: absolute
+		right: 0
 
 
 

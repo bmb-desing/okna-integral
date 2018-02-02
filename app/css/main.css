@@ -3418,6 +3418,7 @@ main {
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
 * {
@@ -3462,11 +3463,7 @@ textarea {
 }
 
 .active__menu--li a:after {
-  position: absolute;
-  content: '\2039';
-  -webkit-transform: rotate(90deg) !important;
-  -ms-transform: rotate(90deg) !important;
-  transform: rotate(90deg) !important;
+  color: #dc3236;
 }
 
 h6 {
@@ -3492,7 +3489,8 @@ h6 span {
 
 .owl-dots {
   text-align: center;
-  padding-top: 50px;
+  position: relative;
+  bottom: 150px;
 }
 
 .owl-dots .owl-dot {
@@ -3529,21 +3527,23 @@ h6 span {
   position: relative;
 }
 
-.otkos__wrap .owl-nav {
+.owl-nav {
   opacity: 0.6;
   color: white;
   font-size: 30px;
-  position: absolute;
+  max-width: 1170px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
   width: 100%;
-  top: 30px;
+  bottom: 440px;
 }
 
-.otkos__wrap .owl-nav .owl-prev {
+.owl-nav .owl-prev {
   position: absolute;
-  left: 0;
 }
 
-.otkos__wrap .owl-nav .owl-next {
+.owl-nav .owl-next {
   position: absolute;
   right: 0;
 }
