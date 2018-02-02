@@ -3487,11 +3487,11 @@ h6 span {
   margin-left: 10px;
 }
 
-.li__topmenu--products {
+.li__topmenu {
   position: relative;
 }
 
-.li__topmenu--products .topmenu__products {
+.li__topmenu .topmenu__products {
   display: none;
   position: absolute;
   background-color: #2c3844;
@@ -3499,7 +3499,7 @@ h6 span {
   width: 300px;
 }
 
-.li__topmenu--products .topmenu__products li {
+.li__topmenu .topmenu__products li {
   display: block !important;
   color: #9fa3a8;
   font-size: 12px;
@@ -3507,20 +3507,20 @@ h6 span {
   line-height: 20px;
 }
 
-.li__topmenu--products .topmenu__products li:hover {
+.li__topmenu .topmenu__products li:hover {
   color: white !important;
 }
 
-.li__topmenu--products .topmenu__products li a {
+.li__topmenu .topmenu__products li a {
   padding: 10px !important;
   margin-right: 0 !important;
 }
 
-.li__topmenu--products .topmenu__products li a:hover {
+.li__topmenu .topmenu__products li a:hover {
   color: #dc3236 !important;
 }
 
-.li__topmenu--products .topmenu__products li a:after {
+.li__topmenu .topmenu__products li a:after {
   content: '';
 }
 
