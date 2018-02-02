@@ -3,11 +3,30 @@ $('document').ready(function() {
 	$('li.li__topmenu').click(function() {
 		$('li.li__topmenu').removeClass('active__menu--li')
 		$(this).addClass('active__menu--li');
+        $('.topmenu__products').css('display','none')
 	})
+
+    $('.li__topmenu a').click(function(e) {
+        e.preventDefault();
+     })
 
     $('li.li__topmenu--products').click(function() {
         $('.topmenu__products').css('display','block')
         $('.topmenu__products li a').css('color','white')
+    })
+
+     $('li.li__topmenu--products').hover(function() {
+        $('.topmenu__products').css('display','block')
+        $('.topmenu__products li a').css('color','white')
+    })
+     $('li.li__topmenu--products').mouseleave(function() {
+        $('.topmenu__products').css('display','none')
+    })
+
+
+      $('.topmenu__products li a').hover(function() {
+        $('.topmenu__products li a').css('color','white')
+        $(this).css('color','#dc3236')
     })
 
 	$('.pls__otkos').owlCarousel({
