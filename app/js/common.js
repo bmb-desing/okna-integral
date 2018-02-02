@@ -1,15 +1,5 @@
 
 $('document').ready(function() {
-	$('li.li__topmenu').click(function() {
-		$('li.li__topmenu').removeClass('active__menu--li')
-		$(this).addClass('active__menu--li');
-	})
-
-
-    $('li.li__topmenu').click(function() {
-        $('.topmenu__products').css('display','block')
-        $('.topmenu__products li a').css('color','white')
-    })
 
        // Все для меню
      //Отмена на нажатие

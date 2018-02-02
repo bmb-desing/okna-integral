@@ -3495,7 +3495,8 @@ h6 span {
   display: none;
   position: absolute;
   background-color: #2c3844;
-  padding: 10px 30px 25px 25px;
+  padding-top: 10px;
+  padding-bottom: 25px;
   width: 300px;
 }
 
@@ -3505,10 +3506,13 @@ h6 span {
   font-size: 12px;
   text-transform: uppercase;
   line-height: 20px;
+  padding-left: 25px;
 }
 
 .li__topmenu .topmenu__products li:hover {
   color: white !important;
+  background-color: #202932;
+  width: 100%;
 }
 
 .li__topmenu .topmenu__products li a {
