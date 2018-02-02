@@ -1,30 +1,15 @@
 
 $('document').ready(function() {
+	$('li.li__topmenu').click(function() {
+		$('li.li__topmenu').removeClass('active__menu--li')
+		$(this).addClass('active__menu--li');
+	})
 
-<<<<<<< HEAD
 
     $('li.li__topmenu--products').click(function() {
         $('.topmenu__products').css('display','block')
         $('.topmenu__products li a').css('color','white')
     })
-=======
-    // Все для меню
-    //Отмена на нажатие
-	$('.li__topmenu').click(function(e) {
-        e.preventDefault();
-        return false;
-    });
-    //Конец Отмены на нажатие
-    //Открытие при наведении
-    $('.li__topmenu').hover(function() {
-        $(this).addClass('active__menu--li');
-        $(this).children('ul').slideDown();    
-    }, function() {
-        $(this).removeClass('active__menu--li');
-        $(this).children('ul').slideUp();
-    });
-    //Все для меню окончание , коментируй свой код
->>>>>>> 4a2a7b156aca4b0a8d290348070fced643b07316
 
        // Все для меню
      //Отмена на нажатие
@@ -36,6 +21,7 @@ $('document').ready(function() {
      //Открытие при наведении
      $('.li__topmenu').hover(function() {
          $(this).addClass('active__menu--li');
+         $('.topmenu__products a').css('color', 'white')
          $(this).children('ul').slideDown();    
      }, function() {
          $(this).removeClass('active__menu--li');

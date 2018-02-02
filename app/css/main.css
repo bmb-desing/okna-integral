@@ -3507,6 +3507,10 @@ h6 span {
   line-height: 20px;
 }
 
+.li__topmenu--products .topmenu__products li:hover {
+  color: white !important;
+}
+
 .li__topmenu--products .topmenu__products li a {
   padding: 10px !important;
   margin-right: 0 !important;
