@@ -5,6 +5,11 @@ $('document').ready(function() {
 		$(this).addClass('active__menu--li');
 	})
 
+    $('li.li__topmenu--products').click(function() {
+        $('.topmenu__products').css('display','block')
+        $('.topmenu__products li a').css('color','white')
+    })
+
 	$('.pls__otkos').owlCarousel({
     loop: true,
     dots: true,
