@@ -6,7 +6,7 @@ $('document').ready(function() {
 	})
 
 
-    $('li.li__topmenu--products').click(function() {
+    $('li.li__topmenu').click(function() {
         $('.topmenu__products').css('display','block')
         $('.topmenu__products li a').css('color','white')
     })
