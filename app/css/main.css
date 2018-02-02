@@ -3501,7 +3501,7 @@ h6 span {
 
 .li__topmenu--products .topmenu__products li {
   display: block !important;
-  color: #ebebeb;
+  color: #9fa3a8;
   font-size: 12px;
   text-transform: uppercase;
   line-height: 20px;
@@ -3510,6 +3510,10 @@ h6 span {
 .li__topmenu--products .topmenu__products li a {
   padding: 10px !important;
   margin-right: 0 !important;
+}
+
+.li__topmenu--products .topmenu__products li a:hover {
+  color: #dc3236 !important;
 }
 
 .li__topmenu--products .topmenu__products li a:after {
