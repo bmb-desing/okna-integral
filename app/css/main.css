@@ -3531,6 +3531,7 @@ h6 span {
   padding-top: 10px;
   padding-bottom: 25px;
   width: 300px;
+  z-index: 2;
 }
 
 .li__topmenu .topmenu__products li {
@@ -4670,6 +4671,18 @@ h6 span {
   cursor: pointer;
 }
 
+.ostekl__obj--btn {
+  background-color: #ed1f24;
+  padding: 25px;
+  border: none;
+  font-size: 15px;
+  margin-top: 30px;
+  text-transform: uppercase;
+  color: #fac3c5;
+  cursor: pointer;
+  display: inline-block;
+}
+
 .mans__wrap--metall,
 .plsotkos__wrap {
   -webkit-box-align: center;
@@ -4826,6 +4839,7 @@ h6 span {
   font-size: 26px;
   text-transform: uppercase;
   display: inline-block;
+  margin-bottom: 20px;
 }
 
 .mans__about .mans__wrap .mans__left p {
@@ -4834,6 +4848,21 @@ h6 span {
   font-family: MC-700;
   font-size: 15px;
   line-height: 22px;
+}
+
+.mans__about .mans__wrap .mans__left span {
+  font-family: MC-900;
+  font-size: 26px;
+  text-transform: uppercase;
+}
+
+.mans__about .mans__wrap .mans__left strong {
+  display: block;
+  margin-top: 20px;
+}
+
+.mans__about .mans__wrap .mans__left hr {
+  margin: 20px 0;
 }
 
 .mans__about .mans__wrap .mans__image {
@@ -6041,6 +6070,19 @@ h6 span {
 
 .form textarea {
   margin-top: 20px;
+}
+
+.mans__right {
+  margin: 40px 0;
+}
+
+.mans__right .mans__image {
+  margin: 0;
+  margin-left: 50px;
+  float: right;
+  position: relative;
+  -webkit-box-shadow: 40px 40px 0 #252f3a;
+  box-shadow: 40px 40px 0 #252f3a;
 }
 
 /* Large Devices, Wide Screens */

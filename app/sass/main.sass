@@ -74,6 +74,7 @@ h6
 		padding-top: 10px
 		padding-bottom: 25px
 		width: 300px
+		z-index: 2
 		& li
 			display: block !important
 			color: #9fa3a8
@@ -748,6 +749,17 @@ h6
 			color: #fac3c5
 			cursor: pointer
 
+.ostekl__obj--btn
+	background-color: #ed1f24
+	padding: 25px
+	border: none
+	font-size: 15px
+	margin-top: 30px
+	text-transform: uppercase
+	color: #fac3c5
+	cursor: pointer
+	display: inline-block
+
 //
 
 .mans__wrap--metall, .plsotkos__wrap
@@ -827,12 +839,22 @@ h6
 				font-size: 26px
 				text-transform: uppercase
 				display: inline-block
+				margin-bottom: 20px
 			p
 				margin-top: 15px
 				color: #262626;
 				font-family: MC-700
 				font-size: 15px
 				line-height: 22px
+			span
+				font-family: MC-900
+				font-size: 26px
+				text-transform: uppercase
+			strong
+				display: block
+				margin-top: 20px
+			hr
+				margin: 20px 0
 		.mans__image
 			margin: 0
 			margin-left: 50px
@@ -1554,7 +1576,16 @@ h6
 	font-size: 12px
 .form
 	textarea
-		margin-top: 20px	
+		margin-top: 20px
+
+.mans__right
+	margin: 40px 0
+	.mans__image
+		margin: 0
+		margin-left: 50px
+		float: right
+		position: relative
+		box-shadow: 40px 40px 0 rgba(37,47,58,1)
 
 
 @import 'media'
