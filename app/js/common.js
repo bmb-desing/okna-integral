@@ -17,12 +17,6 @@ $('document').ready(function() {
     
 
        // Все для меню
-     //Отмена на нажатие
-   $('.li__topmenu').click(function(e) {
-         e.preventDefault();
-         return false;
-     });
-     //Конец Отмены на нажатие
      //Открытие при наведении
      $('.li__topmenu').hover(function() {
          $(this).addClass('active__menu--li');
