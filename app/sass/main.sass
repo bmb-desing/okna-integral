@@ -20,22 +20,24 @@ input, button, textarea
 	margin: 0
 	padding: 0
 
-.search__input input
-	display: inline
+.search__input
+	display: none
 	position: absolute
-	width: 300px
-	height: 35px
 	left: -100%
-	padding: 0 20px
-	border-radius: 20px
-	&:after
-		content: 'ffffff'
+	top: 35%
+	z-index: 2
+	input
+		display: inline
+		width: 300px
+		height: 35px
+		padding: 0 20px
+		border-radius: 20px
+	.fa
+		font-size: 22px
 		position: absolute
-		right: 0
-		top: 0
-		color: red
-		width: 20px
-		height: 20px
+		right: 10px
+		bottom: 6px
+		cursor: pointer
 
 .active__menu--li
 	a
@@ -886,11 +888,12 @@ h6
 				display: inline-block
 				margin-right: 20px
 		.menu__right
+			position: relative
 			ul
 				+row-flex()
 				+justify-content(space-between)
 				padding-top: 40px
-				margin-left: 20px
+				margin-left: 5px
 				position: relative
 				li
 					display: inline-block
