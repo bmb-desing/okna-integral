@@ -1,4 +1,3 @@
-
 $('document').ready(function() {
 
     //Инпут поиска
@@ -17,16 +16,16 @@ $('document').ready(function() {
        // Все для меню
      //Открытие при наведении
      $('.li__topmenu').hover(function() {
-         $(this).addClass('active__menu--li');
+         $(this).addClass('hover__menu--li');
          $('.topmenu__products a').css('color', 'white')
          $(this).children('ul').slideDown();    
      }, function() {
-         $(this).removeClass('active__menu--li');
+         $(this).removeClass('hover__menu--li');
          $(this).children('ul').slideUp();
      });
      //Все для меню окончание , коментируй свой код
 
-	$('.pls__otkos').owlCarousel({
+    $('.pls__otkos').owlCarousel({
     loop: true,
     dots: true,
     nav: true,
@@ -48,7 +47,7 @@ $('document').ready(function() {
     }
 })
 
-	$('.index__owl').owlCarousel({
+    $('.index__owl').owlCarousel({
     loop: true,
     nav: false,
     dots: false,
@@ -96,15 +95,14 @@ function validateForm() {
     } 
 
     if(textar.length < 10) {
-		elem2.style.display = 'block'
-		return false
-		} else {
-			elem2.style.display = 'none'	
-	}
+        elem2.style.display = 'block'
+        return false
+        } else {
+            elem2.style.display = 'none'    
+    }
 
     if(textar.length > 10 && phone.length > 2) {
         return true;
     }
     
 }
-	

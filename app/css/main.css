@@ -3311,6 +3311,26 @@
   width: 100%;
 }
 
+.contacts__wrap .cont__client form input[type="text"] {
+  display: none;
+}
+
+.li__topmenu .topmenu__products .active__menu--li a {
+  color: #dc3236;
+}
+
+.input__text {
+  margin-top: 10px;
+}
+
+.input__text:first-chlid {
+  margin-top: 0;
+}
+
+.error {
+  font-size: 12px !important;
+}
+
 body,
 div,
 dl,
