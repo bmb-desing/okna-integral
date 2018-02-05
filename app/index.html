@@ -256,12 +256,12 @@
           <span><span>забота</span> о клиентах - наша основная задача! Для нас очень важна обратная связь.</span>
           <p>Вы поможете оптимизировать усилия компании в нужном направлении и создать лучшие условия обслуживания.</p>
           <h6><span>напишите нам и</span> мы вам перезвоним</h6>
-          <form name="myForm" onsubmit="return validateForm()">
-            <input class="input__text" placeholder="Ваше имя" type="text"><br>
-            <input class="input__text phone" placeholder="Ваш телефон" type="text"><br>
-            <span class="form__error--first">это поле должно быть больше чем 2 символа</span>
+          <form name="myForm" class="form">
+            <input class="input__text" placeholder="Ваше имя" type="text">
+            <input class="input__text phone" placeholder="Ваш телефон" type="text">
+            <span class="error">это поле должно быть больше чем 2 символа</span>
             <textarea cols="30" placeholder="Текст сообщения" name="fname" rows="10"></textarea> 
-            <span class="form__error--sec">это поле должно быть больше, чем 10 символов</span>
+            <span class="error">это поле должно быть больше, чем 10 символов</span>
             <input type="submit" value="перезвонить мне"> 
           </form>
         </div>

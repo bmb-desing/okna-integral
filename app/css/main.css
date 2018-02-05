@@ -3486,14 +3486,16 @@ textarea {
   cursor: pointer;
 }
 
-.active__menu--li a {
+.active__menu--li a,
+.hover__menu--li a {
   position: relative;
   color: #dc3236;
   -webkit-transition: all .5s;
   transition: all .5s;
 }
 
-.active__menu--li a:after {
+.active__menu--li a:after,
+.hover__menu--li a:after {
   color: #dc3236;
 }
 
@@ -6018,6 +6020,27 @@ h6 span {
 
 .footer__wrap .wrap__contact .mail {
   font-size: 18px;
+}
+
+.input__text {
+  margin-top: 20px;
+}
+
+.input__text:first-chlid {
+  margin-top: 0;
+}
+
+.header__menu ul li ul .active__menu--li a {
+  color: #dc3236 !important;
+}
+
+.contacts__wrap .cont__client .error {
+  color: red;
+  font-size: 12px;
+}
+
+.form textarea {
+  margin-top: 20px;
 }
 
 /* Large Devices, Wide Screens */

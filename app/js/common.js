@@ -17,11 +17,11 @@ $('document').ready(function() {
        // Все для меню
      //Открытие при наведении
      $('.li__topmenu').hover(function() {
-         $(this).addClass('active__menu--li');
+         $(this).addClass('hover__menu--li');
          $('.topmenu__products a').css('color', 'white')
          $(this).children('ul').slideDown();    
      }, function() {
-         $(this).removeClass('active__menu--li');
+         $(this).removeClass('hover__menu--li');
          $(this).children('ul').slideUp();
      });
      //Все для меню окончание , коментируй свой код
