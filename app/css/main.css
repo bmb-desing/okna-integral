@@ -4426,7 +4426,7 @@ h6 span {
   padding-bottom: 30px;
 }
 
-.error__btn button {
+.error__btn a {
   background-color: #ed1f24;
   padding: 20px 100px;
   border: none;
