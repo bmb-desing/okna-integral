@@ -3455,25 +3455,29 @@ textarea {
   padding: 0;
 }
 
+.search__input {
+  display: none;
+  position: absolute;
+  left: -100%;
+  top: 35%;
+  z-index: 2;
+}
+
 .search__input input {
   display: inline;
-  position: absolute;
   width: 300px;
   height: 35px;
-  left: -100%;
   padding: 0 20px;
   -webkit-border-radius: 20px;
   border-radius: 20px;
 }
 
-.search__input input:after {
-  content: 'ffffff';
+.search__input .fa {
+  font-size: 22px;
   position: absolute;
-  right: 0;
-  top: 0;
-  color: red;
-  width: 20px;
-  height: 20px;
+  right: 10px;
+  bottom: 6px;
+  cursor: pointer;
 }
 
 .active__menu--li a {
@@ -4911,6 +4915,10 @@ h6 span {
   margin-right: 20px;
 }
 
+.header__menu .menu__right {
+  position: relative;
+}
+
 .header__menu .menu__right ul {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4926,7 +4934,7 @@ h6 span {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding-top: 40px;
-  margin-left: 20px;
+  margin-left: 5px;
   position: relative;
 }
 

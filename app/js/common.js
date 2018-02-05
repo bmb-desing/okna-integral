@@ -1,6 +1,12 @@
 
 $('document').ready(function() {
 
+    //Инпут поиска
+    $('.fa-search').click(function(){
+    $('.search__input').css('display','inline')
+    });
+    
+
        // Все для меню
      //Отмена на нажатие
    $('.li__topmenu').click(function(e) {
@@ -41,9 +47,10 @@ $('document').ready(function() {
     }
 })
 
-	$('.owl-carousel').owlCarousel({
+	$('.index__owl').owlCarousel({
     loop: true,
     nav: false,
+    dots: false,
     responsive: {
         0:{
             items:1
