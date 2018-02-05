@@ -5,6 +5,13 @@ $('document').ready(function() {
     $('.fa-search').click(function(){
     $('.search__input').css('display','inline')
     });
+
+    $('body').click(function(e) {
+        let noga = $('.search__input')
+        if(e.target != noga){
+         $('.search__input').css('display','none')
+        }
+    })
     
 
        // Все для меню
