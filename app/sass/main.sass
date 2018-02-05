@@ -20,6 +20,23 @@ input, button, textarea
 	margin: 0
 	padding: 0
 
+.search__input input
+	display: inline
+	position: absolute
+	width: 300px
+	height: 35px
+	left: -100%
+	padding: 0 20px
+	border-radius: 20px
+	&:after
+		content: 'ffffff'
+		position: absolute
+		right: 0
+		top: 0
+		color: red
+		width: 20px
+		height: 20px
+
 .active__menu--li
 	a
 		position: relative
@@ -398,6 +415,8 @@ h6
 		.axor__leftright__wrap
 			+row-flex()
 			+justify-content(space-between)
+			+col()
+			+col-6()
 			margin: 0
 			margin-bottom: 50px
 			.axorproducts__leftpart
@@ -509,15 +528,14 @@ h6
 		+col()
 		+col-5()
 		margin: 0
-
-h5
-	text-align: center
-	display: block
-	font-family: MC-900
-	padding-bottom: 30px
-	padding-top: 10px
-	border-bottom: 2px solid #0094de
-	width: 100%
+	h5
+		text-align: center
+		display: block
+		font-family: MC-900
+		padding-bottom: 30px
+		padding-top: 10px
+		border-bottom: 2px solid #0094de
+		width: 100%
 
 //404
 
@@ -873,6 +891,7 @@ h5
 				+justify-content(space-between)
 				padding-top: 40px
 				margin-left: 20px
+				position: relative
 				li
 					display: inline-block
 					position: relative
