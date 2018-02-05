@@ -1,7 +1,10 @@
 
 $('document').ready(function() {
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 56a4b370487178935ee6d69960c8e81451d10d21
        // Все для меню
      //Открытие при наведении
      $('.li__topmenu').hover(function() {
