@@ -6,12 +6,14 @@ $('document').ready(function() {
     $('.search__input').css('display','inline')
     });
 
-    $('body').click(function(e) {
-        let noga = $('.search__input')
-        if(e.target != noga){
-         $('.search__input').css('display','none')
+
+   $(document).mouseup(function (e){ // событие клика по веб-документу
+        var div = $(".search__input"); // тут указываем ID элемента
+        if (!div.is(e.target) // если клик был не по нашему блоку
+            && div.has(e.target).length === 0) { // и не по его дочерним элементам
+            div.hide(); // скрываем его
         }
-    })
+    });
     
 
        // Все для меню
