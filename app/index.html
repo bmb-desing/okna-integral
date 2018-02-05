@@ -258,10 +258,11 @@
           <h6><span>напишите нам и</span> мы вам перезвоним</h6>
           <form name="myForm" onsubmit="return validateForm()">
             <input class="input__text" placeholder="Ваше имя" type="text"><br>
-            <input class="input__text" placeholder="Ваш телефон" type="text" id="phone"><br>
+            <input class="input__text phone" placeholder="Ваш телефон" type="text"><br>
+            <span class="form__error--first">это поле должно быть больше чем 2 символа</span>
             <textarea cols="30" placeholder="Текст сообщения" name="fname" rows="10"></textarea> 
-            <span class="form__error">это поле должно быть больше, чем 10 символов</span>
-            <input type="submit" value="перезвонить мне" onclick="submitBut();return false"> 
+            <span class="form__error--sec">это поле должно быть больше, чем 10 символов</span>
+            <input type="submit" value="перезвонить мне"> 
           </form>
         </div>
       </div>

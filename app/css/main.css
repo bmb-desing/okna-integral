@@ -3455,6 +3455,12 @@ textarea {
   padding: 0;
 }
 
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 .search__input {
   display: none;
   position: absolute;
@@ -4112,6 +4118,7 @@ h6 span {
 
 .axor__wrap .axor__furnityrablock .mans__image {
   margin: 0;
+  float: right;
   margin-left: 50px;
   -webkit-box-shadow: 40px 40px 0 #252f3a;
   box-shadow: 40px 40px 0 #252f3a;
@@ -4208,6 +4215,33 @@ h6 span {
   font-size: 15px;
   line-height: 22px;
   font-family: MC-500;
+}
+
+.about__favorite__right {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-left: 15px;
+  margin-right: 15px;
+  word-wrap: break-word;
+  width: -webkit-calc(41.66666666666667% - 30px);
+  width: calc(41.66666666666667% - 30px);
+  margin: 0;
+}
+
+.about__favorite__right .favorite__video__choice {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .partners__favorite__padd {
@@ -4771,19 +4805,16 @@ h6 span {
   flex-wrap: wrap;
   margin-left: -15px;
   margin-right: -15px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   margin: 0 auto;
   max-width: 1170px;
   padding-bottom: 70px;
 }
 
 .mans__about .mans__wrap .mans__left {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  margin-left: 15px;
-  margin-right: 15px;
-  word-wrap: break-word;
-  width: -webkit-calc(41.66666666666667% - 30px);
-  width: calc(41.66666666666667% - 30px);
   margin: 0;
 }
 
@@ -4806,9 +4837,8 @@ h6 span {
 .mans__about .mans__wrap .mans__image {
   margin: 0;
   margin-left: 50px;
+  float: right;
   position: relative;
-  background-position: center;
-  background-size: 100% 100%;
   -webkit-box-shadow: 40px 40px 0 #252f3a;
   box-shadow: 40px 40px 0 #252f3a;
 }
@@ -5611,6 +5641,7 @@ h6 span {
   width: -webkit-calc(25% - 30px);
   width: calc(25% - 30px);
   margin: 0;
+  text-align: center;
 }
 
 .contacts {
@@ -5719,13 +5750,15 @@ h6 span {
   text-align: left;
 }
 
-.contacts__wrap .cont__client .form__error {
+.contacts__wrap .cont__client .form__error--sec,
+.contacts__wrap .cont__client .form__error--first {
   text-transform: uppercase;
   font-family: MC-900;
   font-size: 22px;
   color: #f55358;
   display: none;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .contacts__wrap .cont__client span {

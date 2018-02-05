@@ -83,13 +83,28 @@ $(".phone").mask("+ 9(999)999-9999");
 
 function validateForm() {
     let textar = document.querySelector('textarea').value
-    let elem = document.querySelector('.form__error')
+    let phone = document.querySelector('.phone').value
+    let elem = document.querySelector('.form__error--first')
+    let elem2 = document.querySelector('.form__error--sec')
+    
+
+    if(phone.length < 2) {
+        elem.style.display = 'block'
+        return false
+        } else {
+            elem.style.display = 'none'         
+    } 
+
     if(textar.length < 10) {
-		elem.style.display = 'block'
+		elem2.style.display = 'block'
 		return false
 		} else {
-			elem.style.display = 'none'
-			return true;
+			elem2.style.display = 'none'	
 	}
+
+    if(textar.length > 10 && phone.length > 2) {
+        return true;
+    }
+    
 }
 	

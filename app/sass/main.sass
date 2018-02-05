@@ -20,6 +20,11 @@ input, button, textarea
 	margin: 0
 	padding: 0
 
+.clearfix:after 
+  content: ""
+  clear: both
+  display: table
+
 .search__input
 	display: none
 	position: absolute
@@ -403,6 +408,7 @@ h6
 					color: #ff4343
 		.mans__image
 			margin: 0
+			float: right
 			margin-left: 50px
 			box-shadow: 40px 40px 0 rgba(37,47,58,1)
 
@@ -445,6 +451,14 @@ h6
 
 
 //partnFavorite
+
+.about__favorite__right
+	+col()
+	+col-5()
+	margin: 0
+	.favorite__video__choice
+		+row-flex()
+		+justify-content(space-between)
 
 .partners__favorite__padd
 	padding-top: 80px
@@ -801,12 +815,11 @@ h6
 	padding-bottom: 80px
 	.mans__wrap
 		+row-flex()
+		+justify-content(space-between)
 		margin: 0 auto
 		max-width: 1170px
 		padding-bottom: 70px
 		.mans__left
-			+col()
-			+col-5()
 			margin: 0
 			h6
 				color: #262626
@@ -823,9 +836,8 @@ h6
 		.mans__image
 			margin: 0
 			margin-left: 50px
+			float: right
 			position: relative
-			background-position: center
-			background-size: 100% 100%
 			box-shadow: 40px 40px 0 rgba(37,47,58,1)
 		.mans__image__second
 			box-shadow: -40px 40px 0 rgba(37,47,58,1)
@@ -1294,6 +1306,7 @@ h6
 			+col()
 			+col-3()
 			margin: 0
+			text-align: center
 
 .contacts
 	padding-top: 80px
@@ -1359,13 +1372,14 @@ h6
 			margin: 0
 			+offset-left(2)
 			text-align: left
-			.form__error
+			.form__error--sec, .form__error--first
 				text-transform: uppercase
 				font-family: MC-900
 				font-size: 22px
 				color: #f55358
 				display: none
 				margin-top: 10px
+				margin-bottom: 10px
 			span
 				font-family: MC-700
 				font-size: 18px
