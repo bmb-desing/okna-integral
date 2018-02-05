@@ -4856,6 +4856,15 @@ h6 span {
   text-transform: uppercase;
 }
 
+.mans__about .mans__wrap .mans__left strong {
+  display: block;
+  margin-top: 20px;
+}
+
+.mans__about .mans__wrap .mans__left hr {
+  margin: 20px 0;
+}
+
 .mans__about .mans__wrap .mans__image {
   margin: 0;
   margin-left: 50px;
@@ -6061,6 +6070,19 @@ h6 span {
 
 .form textarea {
   margin-top: 20px;
+}
+
+.mans__right {
+  margin: 40px 0;
+}
+
+.mans__right .mans__image {
+  margin: 0;
+  margin-left: 50px;
+  float: right;
+  position: relative;
+  -webkit-box-shadow: 40px 40px 0 #252f3a;
+  box-shadow: 40px 40px 0 #252f3a;
 }
 
 /* Large Devices, Wide Screens */
