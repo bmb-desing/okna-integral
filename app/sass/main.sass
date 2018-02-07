@@ -20,6 +20,10 @@ input, button, textarea
 	margin: 0
 	padding: 0
 
+.main__wrap
+	max-width: 1170px
+	margin: 0 auto
+
 
 .search__input
 	display: none
@@ -318,6 +322,8 @@ h6
 		color: black
 	&--red
 		color: #f73d42
+	&--white
+		color: white
 
 .axor__category
 	background-color: black
@@ -1690,5 +1696,147 @@ h6
 .lox
 	+row-flex()
 	+justify-content(space-between)
+
+.dilers__about__cex
+	padding: 80px 0
+	h6
+		font-family: MC-900
+		text-align: center
+		padding-bottom: 30px
+		font-size: 26px
+		text-transform: uppercase
+	p
+		color: #131313
+		font-family: MC-900
+		padding-bottom: 40px
+		text-align: center
+		font-size: 18px
+		text-transform: uppercase
+	.dilers__product__price
+		+row-flex()
+		+justify-content(space-between)
+		+align-items(flex-start)
+		margin: 0
+		.dilers__price__block
+			+col()
+			+col-4()
+			margin: 0
+			background-color: #d7d7d7
+			text-align: center
+			.product__price__head
+				background-color: #24313d
+				padding: 30px 15px
+				h6
+					margin-bottom: 20px
+					padding: 0
+					color: white
+				span
+					padding: 0
+					color: #f5272d
+					font-size: 26px
+					text-transform: uppercase
+					font-family: MC-700
+			span
+				display: block
+				color: #121212
+				font-family: MC-900
+				font-size: 15px
+				text-transform: uppercase
+				line-height: 30px
+				padding: 20px 0
+
+.dilers__integral__opt
+	padding-top: 80px
+	background-position: center
+	background-size: cover
+	position: relative
+	.dilers__opt__wrap
+		+row-flex()
+		+justify-content(space-between)
+		margin: 0
+		.dilers__opt__block
+			+col()
+			+col-4()
+			margin: 0
+			text-align: center
+			margin-bottom: 60px
+			span
+				display: block
+				color: #e9e9e9
+				font-family: MС-700
+				font-size: 18px
+				text-transform: uppercase
+	.dilers__integral__form
+		padding-top: 80px
+		padding-bottom: 100px
+		background-color: #cf7575
+		position: relative
+		bottom: -80px
+		h6
+			color: white
+			font-family: MC-700
+			font-size: 18px
+			text-transform: uppercase
+			text-align: center
+			margin-bottom: 40px
+			span
+				font-family: MC-900
+		.dilers__form
+			text-align: center
+			max-width: 770px
+			margin: 0 auto
+			input
+				width: 48%
+				margin-right: 10px
+				text-align: center
+				border: none
+				font-size: 15px
+				padding: 20px 40px
+				text-transform: uppercase
+				cursor: pointer
+				font-family: MC-900
+				background-color: #ed1f24
+				color: white
+				margin-bottom: 20px
+			input[type="text"]
+				border: 1px solid white
+				background-color: transparent
+				text-align: left
+			input[type="submit"]
+				background-color: #ed1f24
+
+.dilers__busines
+	padding-top: 170px
+	padding-bottom: 80px
+	h6
+		text-align: center
+		color: black
+		font-family: MC-900
+		font-size: 26px
+		text-transform: uppercase
+		margin-bottom: 40px
+	.dilers__busines__flex
+		+row-flex()
+		+justify-content(center)
+		p
+			background-color: #1e2e3d
+			padding: 70px 30px
+			text-align: center
+			color: #efefef
+			font-family: MC-900
+			margin-right: 10px
+			font-size: 18px
+			text-transform: uppercase
+
+
+.dilers__span__bcg
+	font-family: MC-900
+	font-size: 18px
+	text-transform: uppercase
+	margin-top: 30px
+	display: block
+	line-height: 1.5
+
+				
 
 @import 'media'
