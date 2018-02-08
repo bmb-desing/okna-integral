@@ -6625,10 +6625,275 @@ h6 span {
   display: block;
 }
 
-.contact__map {
-  background-position: center;
-  background-size: cover;
-  padding-bottom: 500px;
+.contact__map iframe {
+  width: 100%;
+  height: 500px;
+  border: 0;
+}
+
+.newsblock {
+  padding-top: 75px;
+}
+
+.newsblock h4 {
+  font-family: MC-900;
+  font-size: 26px;
+  text-transform: uppercase;
+  color: #262626;
+}
+
+.newsblock__wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  margin: 0;
+}
+
+.newsblock__wrap .newsblock--left {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-left: 15px;
+  margin-right: 15px;
+  word-wrap: break-word;
+  width: -webkit-calc(50% - 30px);
+  width: calc(50% - 30px);
+  margin: 0;
+}
+
+.newsblock__wrap .newsblock--right {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-left: 15px;
+  margin-right: 15px;
+  word-wrap: break-word;
+  width: -webkit-calc(33.333333333333336% - 30px);
+  width: calc(33.333333333333336% - 30px);
+  margin: 0;
+  text-transform: uppercase;
+  background-color: #efefef;
+  padding: 25px 0 50px 35px;
+}
+
+.newsblock__wrap .newsblock--right h6 {
+  color: #141414;
+  font-family: MC-900;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.newsblock__wrap .newsblock--right span {
+  display: block;
+  margin-bottom: 20px;
+  color: #262626;
+  font-family: MC-700;
+  font-size: 18px;
+}
+
+.newsblock__wrap .newsblock__left__container {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.newsblock__wrap .newsblock__left__container h6 {
+  color: #131313;
+  font-family: MC-900;
+  font-size: 18px;
+  text-transform: uppercase;
+  display: block;
+  margin-top: 25px;
+}
+
+.newsblock__wrap .newsblock__left__container .other__date {
+  color: #909090;
+  font-size: 12px;
+  margin: 15px 0;
+  display: block;
+}
+
+.newsblock__wrap .newsblock__left__container p {
+  color: #141414;
+  font-family: MC-700;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.newsblock__wrap .newsblock__left__container a {
+  font-size: 12px;
+  line-height: 22px;
+  color: #2f2f2f;
+}
+
+.newsblock__wrap .newsblock__left__container a span {
+  color: #d94040;
+}
+
+.news__prevnext {
+  display: inline-block;
+  margin-bottom: 50px;
+}
+
+.inthistory__otzivi {
+  background-color: #555555;
+  padding: 30px 0;
+  text-align: center;
+  color: #e2e2e2;
+}
+
+.inthistory__otzivi span {
+  font-family: MC-900;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-right: 80px;
+  cursor: pointer;
+}
+
+.inthistory__list li {
+  margin-top: 30px;
+  color: #262626;
+  font-family: MC-700;
+  font-size: 15px;
+  line-height: 22px;
+  list-style-type: disc;
+}
+
+.inthistory__active {
+  color: white;
+}
+
+.installmont__content {
+  background-color: #ebebeb;
+  padding: 75px 0;
+}
+
+.installmont__content h4 {
+  color: #151515;
+  font-family: MC-900;
+  text-align: center;
+  padding-bottom: 40px;
+  font-size: 26px;
+  line-height: 22px;
+}
+
+.installmont__content .install__cont__wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.installmont__content .install__cont__wrap .install__cont__block {
+  width: -webkit-calc(33.333333333333336% - 30px);
+  width: calc(33.333333333333336% - 30px);
+  margin: 0;
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.installmont__content .install__cont__wrap .install__cont__block h6 {
+  color: #151515;
+  font-family: MC-900;
+  font-size: 18px;
+  text-align: center;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.installmont__content .install__cont__wrap .install__cont__block span {
+  position: absolute;
+  opacity: 0.35;
+  color: #3394ff;
+  font-family: MC-900;
+  font-size: 90px;
+  line-height: 24px;
+  width: 100%;
+  text-align: center;
+  top: 0;
+}
+
+.installmont__workabout {
+  padding: 80px 0;
+}
+
+.installmont__workabout h4 {
+  font-family: MC-900;
+  font-size: 26px;
+  color: #151515;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.installmont__workabout .installmont__wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.installmont__workabout .installmont__wrap .installmont__worksdiscript {
+  width: -webkit-calc(33.333333333333336% - 30px);
+  width: calc(33.333333333333336% - 30px);
+  margin: 0;
+  text-align: center;
+}
+
+.installmont__workabout .installmont__wrap .installmont__worksdiscript h6 {
+  color: #151515;
+  font-family: MC-700;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding-bottom: 40px;
+  margin-top: 40px;
+}
+
+.installmont__workabout .installmont__wrap .installmont__worksdiscript p {
+  color: #151515;
+  font-family: MC-700;
+  font-size: 15px;
+  line-height: 22px;
+  padding-bottom: 50px;
+}
+
+.windowrepeat__golova {
+  font-family: MC-900;
+  font-size: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #262626;
+  margin-bottom: 30px;
 }
 
 /* Large Devices, Wide Screens */

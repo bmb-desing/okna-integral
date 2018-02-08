@@ -1,5 +1,10 @@
 $('document').ready(function() {
 
+    $('.inthistory__otzivi span').click(function() {
+        $('.inthistory__otzivi span').removeClass('inthistory__active')
+        $(this).addClass('inthistory__active')
+    })
+
     //Инпут поиска
     $('.fa-search').click(function(){
     $('.search__input').css('display','inline')
