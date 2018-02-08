@@ -4874,6 +4874,7 @@ h6 span {
 .mans__about .mans__wrap .image__right {
   float: right;
   margin-left: 50px;
+  margin-bottom: 40px;
 }
 
 .mans__about .mans__wrap .image__left {
@@ -6571,6 +6572,63 @@ h6 span {
   line-height: 24px;
   margin-top: 20px;
   display: block;
+}
+
+.contactspage__header h2 {
+  font-family: MC-900;
+  font-size: 44px;
+  line-height: 57px;
+  text-transform: uppercase;
+  color: white;
+  text-align: left;
+  padding: 220px 0;
+}
+
+.contacts__header__about {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  font-family: MC-900;
+  text-transform: uppercase;
+}
+
+.contacts__header__about h6 {
+  color: black;
+  font-size: 26px;
+  line-height: 57px;
+}
+
+.contacts__header__about span {
+  font-size: 20px;
+  display: block;
+}
+
+.contacts__header__about p {
+  color: black;
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+.contacts__questions {
+  text-align: center;
+}
+
+.contacts__questions .contacts__questions--discript {
+  font-size: 15px;
+  line-height: 22px;
+  color: #0c0c0c;
+}
+
+.contacts__questions .contacts__questions--discript span {
+  color: red;
+  margin-top: 10px;
+  display: block;
+}
+
+.contact__map {
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 500px;
 }
 
 /* Large Devices, Wide Screens */
