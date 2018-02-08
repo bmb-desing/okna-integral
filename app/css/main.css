@@ -6746,6 +6746,34 @@ h6 span {
   margin-bottom: 50px;
 }
 
+.inthistory__otzivi {
+  background-color: #555555;
+  padding: 30px 0;
+  text-align: center;
+  color: #e2e2e2;
+}
+
+.inthistory__otzivi span {
+  font-family: MC-900;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-right: 80px;
+  cursor: pointer;
+}
+
+.inthistory__list li {
+  margin-top: 30px;
+  color: #262626;
+  font-family: MC-700;
+  font-size: 15px;
+  line-height: 22px;
+  list-style-type: disc;
+}
+
+.inthistory__active {
+  color: white;
+}
+
 /* Large Devices, Wide Screens */
 
 /* Small Devices, Tablets */
