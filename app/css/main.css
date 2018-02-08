@@ -6774,6 +6774,119 @@ h6 span {
   color: white;
 }
 
+.installmont__content {
+  background-color: #ebebeb;
+  padding: 75px 0;
+}
+
+.installmont__content h4 {
+  color: #151515;
+  font-family: MC-900;
+  text-align: center;
+  padding-bottom: 40px;
+  font-size: 26px;
+  line-height: 22px;
+}
+
+.installmont__content .install__cont__wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.installmont__content .install__cont__wrap .install__cont__block {
+  width: -webkit-calc(33.333333333333336% - 30px);
+  width: calc(33.333333333333336% - 30px);
+  margin: 0;
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.installmont__content .install__cont__wrap .install__cont__block h6 {
+  color: #151515;
+  font-family: MC-900;
+  font-size: 18px;
+  text-align: center;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.installmont__content .install__cont__wrap .install__cont__block span {
+  position: absolute;
+  opacity: 0.35;
+  color: #3394ff;
+  font-family: MC-900;
+  font-size: 90px;
+  line-height: 24px;
+  width: 100%;
+  text-align: center;
+  top: 0;
+}
+
+.installmont__workabout {
+  padding: 80px 0;
+}
+
+.installmont__workabout h4 {
+  font-family: MC-900;
+  font-size: 26px;
+  color: #151515;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.installmont__workabout .installmont__wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.installmont__workabout .installmont__wrap .installmont__worksdiscript {
+  width: -webkit-calc(33.333333333333336% - 30px);
+  width: calc(33.333333333333336% - 30px);
+  margin: 0;
+  text-align: center;
+}
+
+.installmont__workabout .installmont__wrap .installmont__worksdiscript h6 {
+  color: #151515;
+  font-family: MC-700;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding-bottom: 40px;
+  margin-top: 40px;
+}
+
+.installmont__workabout .installmont__wrap .installmont__worksdiscript p {
+  color: #151515;
+  font-family: MC-700;
+  font-size: 15px;
+  line-height: 22px;
+  padding-bottom: 50px;
+}
+
 /* Large Devices, Wide Screens */
 
 /* Small Devices, Tablets */
