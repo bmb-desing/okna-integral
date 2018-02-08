@@ -4879,6 +4879,7 @@ h6 span {
 .mans__about .mans__wrap .image__left {
   float: left;
   margin-right: 80px;
+  margin-bottom: 40px;
 }
 
 .mans__about .mans__wrap .mans__image {
@@ -6517,6 +6518,59 @@ h6 span {
   margin-top: 30px;
   display: block;
   line-height: 1.5;
+}
+
+.h6__mainstyle {
+  color: #262626;
+  font-family: MC-900;
+  font-size: 26px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.akcii__content__about {
+  font-family: MC-700;
+  font-size: 18px;
+  line-height: 24px;
+  padding-bottom: 20px;
+}
+
+.akcii__content__about span {
+  font-size: 18px;
+}
+
+.akcii__content__h2 {
+  color: #0d0d0d;
+  font-family: MC-900;
+  font-size: 55px;
+  line-height: 60px;
+}
+
+.akcii__left {
+  margin-bottom: 80px;
+}
+
+.akcii__left span {
+  color: #1c1c1c;
+  font-family: MC-900;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.akcii__left p {
+  font-size: 15px;
+  margin-top: 20px;
+  line-height: 20px;
+}
+
+.akcii__left strong {
+  font-family: MC-700;
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 20px;
+  display: block;
 }
 
 /* Large Devices, Wide Screens */
