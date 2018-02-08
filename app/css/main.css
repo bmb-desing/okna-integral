@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 @font-face {
   font-family: "MC-100";
   font-weight: normal;
@@ -3455,6 +3457,11 @@ textarea {
   padding: 0;
 }
 
+.main__wrap {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
 .search__input {
   display: none;
   position: absolute;
@@ -3935,6 +3942,10 @@ h6 span {
 
 .header__axor--red {
   color: #f73d42;
+}
+
+.header__axor--white {
+  color: white;
 }
 
 .axor__category {
@@ -6262,6 +6273,237 @@ h6 span {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+.dilers__about__cex {
+  padding: 80px 0;
+}
+
+.dilers__about__cex h6 {
+  font-family: MC-900;
+  text-align: center;
+  padding-bottom: 30px;
+  font-size: 26px;
+  text-transform: uppercase;
+}
+
+.dilers__about__cex p {
+  color: #131313;
+  font-family: MC-900;
+  padding-bottom: 40px;
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.dilers__about__cex .dilers__product__price {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  margin: 0;
+}
+
+.dilers__about__cex .dilers__product__price .dilers__price__block {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-left: 15px;
+  margin-right: 15px;
+  word-wrap: break-word;
+  width: -webkit-calc(33.333333333333336% - 30px);
+  width: calc(33.333333333333336% - 30px);
+  margin: 0;
+  background-color: #d7d7d7;
+  text-align: center;
+}
+
+.dilers__about__cex .dilers__product__price .dilers__price__block .product__price__head {
+  background-color: #24313d;
+  padding: 30px 15px;
+}
+
+.dilers__about__cex .dilers__product__price .dilers__price__block .product__price__head h6 {
+  margin-bottom: 20px;
+  padding: 0;
+  color: white;
+}
+
+.dilers__about__cex .dilers__product__price .dilers__price__block .product__price__head span {
+  padding: 0;
+  color: #f5272d;
+  font-size: 26px;
+  text-transform: uppercase;
+  font-family: MC-700;
+}
+
+.dilers__about__cex .dilers__product__price .dilers__price__block span {
+  display: block;
+  color: #121212;
+  font-family: MC-900;
+  font-size: 15px;
+  text-transform: uppercase;
+  line-height: 30px;
+  padding: 20px 0;
+}
+
+.dilers__integral__opt {
+  padding-top: 80px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.dilers__integral__opt .dilers__opt__wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.dilers__integral__opt .dilers__opt__wrap .dilers__opt__block {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-left: 15px;
+  margin-right: 15px;
+  word-wrap: break-word;
+  width: -webkit-calc(33.333333333333336% - 30px);
+  width: calc(33.333333333333336% - 30px);
+  margin: 0;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.dilers__integral__opt .dilers__opt__wrap .dilers__opt__block span {
+  display: block;
+  color: #e9e9e9;
+  font-family: MС-700;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.dilers__integral__opt .dilers__integral__form {
+  padding-top: 80px;
+  padding-bottom: 100px;
+  background-color: #cf7575;
+  position: relative;
+  bottom: -80px;
+}
+
+.dilers__integral__opt .dilers__integral__form h6 {
+  color: white;
+  font-family: MC-700;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.dilers__integral__opt .dilers__integral__form h6 span {
+  font-family: MC-900;
+}
+
+.dilers__integral__opt .dilers__integral__form .dilers__form {
+  text-align: center;
+  max-width: 770px;
+  margin: 0 auto;
+}
+
+.dilers__integral__opt .dilers__integral__form .dilers__form input {
+  width: 48%;
+  margin-right: 10px;
+  text-align: center;
+  border: none;
+  font-size: 15px;
+  padding: 20px 40px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: MC-900;
+  background-color: #ed1f24;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.dilers__integral__opt .dilers__integral__form .dilers__form input[type="text"] {
+  border: 1px solid white;
+  background-color: transparent;
+  text-align: left;
+}
+
+.dilers__integral__opt .dilers__integral__form .dilers__form input[type="submit"] {
+  background-color: #ed1f24;
+}
+
+.dilers__busines {
+  padding-top: 170px;
+  padding-bottom: 80px;
+}
+
+.dilers__busines h6 {
+  text-align: center;
+  color: black;
+  font-family: MC-900;
+  font-size: 26px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.dilers__busines .dilers__busines__flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.dilers__busines .dilers__busines__flex p {
+  background-color: #1e2e3d;
+  padding: 70px 30px;
+  text-align: center;
+  color: #efefef;
+  font-family: MC-900;
+  margin-right: 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.dilers__span__bcg {
+  font-family: MC-900;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-top: 30px;
+  display: block;
+  line-height: 1.5;
 }
 
 /* Large Devices, Wide Screens */
