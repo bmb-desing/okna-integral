@@ -10,6 +10,29 @@
   <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
+  <div class="form__fixed">
+      <div class="form__fixed__block">
+        <h2>форма заявки<span class="form__fixed__close">x</span></h2>
+        <h6>Заполните пожалуйста следующие поля</h6>
+        <form>
+          <input class="input__text" placeholder="Ваше имя" type="text"><br>
+            <span class="error_name error">
+              <span class="error">это поле должно быть больше чем 2 символа</span>
+            </span>
+            <input class="input__text phone" placeholder="Ваш телефон" type="text"><br>
+            <span class="error_name error">
+              <span class="error">это поле обязательно для заполнения</span>
+            </span>
+            <span class="error_phone"></span>
+            <h6>
+              Наш специалист перезвонит Вам<br />
+              в течении 5 минут и проконсультирует Вас<br />
+              абсолютно бесплатно
+            </h6>
+            <input type="submit" value="оформить заявку">
+        </form>
+      </div>
+    </div>
   <div class="main">
     <div class="header__wrap">
         <div class="header__menu">
@@ -92,9 +115,6 @@
         <div class="products__item">
           <img alt="Замерщик" src="img/car__item.png"><span>Выбор замерщика</span>
         </div>
-        <div class="products__item">
-          <img alt="Интернет-Магазин" src="img/shop__item.png"><span>Интернет магазин</span>
-        </div>
       </div>
       <div class="job__discript">
         <div class="first__part">
@@ -113,7 +133,15 @@
               </div>
           <div class="owl-carousel index__owl">
             <div class="owl__wrap">
-              <div class="workman"><img src="img/work__man.jpg" alt=""></div>
+              <div class="workman">
+                <img src="img/work__man.jpg" alt="">
+                <div class="workman__hover">
+                  <img src="img/workman__eye.png" alt="">
+                  <div class="header__container--btn">
+                    <button>заказать</button>
+                  </div>
+                </div>
+              </div>
               <div class="comp__history">
                 <h3>история</h3>
                 <h6>нашей компании</h6>
@@ -343,6 +371,15 @@
         </div>
         <div class="wrap__contact">
           <span class="phone"><a href="tel:+79780193409">+7(978) 019-34-09</a></span> <span class="mail">dp@integral-okna.ru</span>
+          <div class="footer__social">
+            <ul>
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-vk"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
