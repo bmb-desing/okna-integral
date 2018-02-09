@@ -6691,6 +6691,10 @@ h6 span {
   margin-bottom: 50px;
 }
 
+.newsblock__wrap .newsblock__left__container img {
+  width: 100%;
+}
+
 .newsblock__wrap .newsblock__left__container h6 {
   color: #131313;
   font-family: MC-900;
