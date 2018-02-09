@@ -1792,7 +1792,7 @@ h6
 			max-width: 770px
 			margin: 0 auto
 			input
-				width: 48%
+				width: 51%
 				margin-right: 10px
 				border: none
 				font-size: 15px
@@ -1991,7 +1991,7 @@ h6
 	padding: 30px 0
 	text-align: center
 	color: #e2e2e2
-	span
+	a
 		font-family: MC-900
 		font-size: 18px
 		text-transform: uppercase
@@ -2084,5 +2084,65 @@ h6
 	text-align: center
 	color: #262626
 	margin-bottom: 30px
+
+.otzivi__content
+	padding-top: 80px
+	padding-bottom: 150px
+	.otzivi__wrap
+		+row-flex()
+		+justify-content(space-between)
+		margin: 0
+		h6
+			color: black
+			padding: 30px 0
+			font-family: MC-900
+			font-size: 18px
+			text-transform: uppercase
+			text-align: center
+		p
+			color: black
+			font-family: MC-700
+			font-size: 15px
+			line-height: 22px
+			padding-bottom: 30px
+		&--left,&--right
+			+col()
+			+col-5()
+			margin: 0
+
+.showmore--btn
+	text-align: center
+	padding-top: 20px
+	a
+		text-align: center
+		padding: 15px 60px
+		text-transform: uppercase
+		color: #d1d1d1
+		border: 1px solid #d1d1d1
+
+.otzivi__letthis
+	color: #0f0f0f
+	font-family: MC-900
+	font-size: 18px
+	text-transform: uppercase
+	display: block
+	text-align: center
+	margin-top: 80px
+
+.otzivi__form
+	text-align: center
+	input
+		width: 51%
+		display: block
+		padding: 20px
+		border: 1px solid black
+		transform: translateX(50%)
+		margin: 20px 0
+	input[type="submit"]
+		background-color: #ed1f24
+		color: white
+		text-transform: uppercase
+		border: none
+
 
 @import 'media'
