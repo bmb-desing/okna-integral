@@ -4969,7 +4969,15 @@ h6 span {
   margin-right: 7px;
 }
 
+.product__prevnext a {
+  color: black;
+}
+
 .product__prevnext .li__current a {
+  color: #e42a2e;
+}
+
+.product__prevnext .news__prevnext li a:hover {
   color: #e42a2e;
 }
 
@@ -6448,7 +6456,8 @@ h6 span {
   margin-bottom: 20px;
 }
 
-.dilers__integral__opt .dilers__integral__form .dilers__form input[type="text"] {
+.dilers__integral__opt .dilers__integral__form .dilers__form input[type="text"],
+.dilers__integral__opt .dilers__integral__form .dilers__form input[type="mail"] {
   border: 1px solid white;
   background-color: transparent;
   text-align: left;
