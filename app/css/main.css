@@ -6961,7 +6961,8 @@ h6 span {
   text-align: center;
 }
 
-.otzivi__form input {
+.otzivi__form input,
+.otzivi__form textarea {
   width: 51%;
   display: block;
   padding: 20px;
@@ -6977,6 +6978,13 @@ h6 span {
   color: white;
   text-transform: uppercase;
   border: none;
+}
+
+.otzivi__form textarea {
+  padding: 15px;
+  border: 1px solid black;
+  resize: none;
+  overflow: hidden;
 }
 
 /* Large Devices, Wide Screens */
