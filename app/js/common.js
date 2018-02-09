@@ -21,8 +21,6 @@ $('document').ready(function() {
    $('.product__prevnext li').click(function(e) {
     $('.product__prevnext li').removeClass('li__current')
     $(this).addClass('li__current')
-    e.preventDefault();
-    return false;
    })
 
        // Все для меню
