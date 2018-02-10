@@ -24,6 +24,63 @@ input, button, textarea
 	max-width: 1170px
 	margin: 0 auto
 
+.form__fixed
+	position: absolute
+	background-color: rgba(0,0,0,.8)
+	width: 100%
+	height: 100%
+	z-index: 1000
+	text-align: center
+	display: none
+	.form__fixed__block
+		position: fixed
+		text-align: center
+		background-color: white
+		left: 35%
+		transform: translateY(35%)
+		h2
+			color: #f0f0f0
+			font-family: MC-900
+			display: block
+			text-align: center
+			background-color: #e32424
+			font-size: 26px
+			text-transform: uppercase
+			padding: 30px 0
+			position: relative
+			span
+				position: absolute
+				right: 3%
+				cursor: pointer
+				color: black
+				text-transform: lowercase
+				font-family: MC-700
+				top: 5px
+		h6
+			color: #171717
+			font-family: MC-700
+			font-size: 15px
+			display: block
+			text-align: center
+			margin-top: 50px
+			margin-bottom: 40px
+		form
+			text-align: center
+			input[type="text"]
+				width: 75%
+				padding: 20px
+				border: 1px solid black
+				margin-bottom: 30px
+			input[type="submit"]
+				background-color: #00a651
+				color: black
+				padding: 20px 60px
+				border: none
+				margin: 40px 0
+				text-transform: uppercase
+				cursor: pointer
+
+
 
 .search__input
 	display: none
@@ -1614,6 +1671,11 @@ h6
 				display: block
 			.mail
 				font-size: 18px
+		.footer__social
+			margin-top: 25px
+			ul li
+				display: inline-block
+				margin-right: 14px
 
 
 .input__text 
@@ -1788,21 +1850,29 @@ h6
 			span
 				font-family: MC-900
 		.dilers__form
-			text-align: left
+			+row-flex()
 			max-width: 770px
 			margin: 0 auto
-			input
-				width: 51%
+			div
+				width: 48%
 				margin-right: 10px
-				border: none
-				font-size: 15px
-				padding: 20px 40px
-				text-transform: uppercase
-				cursor: pointer
-				font-family: MC-900
-				background-color: #ed1f24
-				color: white
-				margin-bottom: 20px
+				input
+					width: 100%
+					margin-right: 10px
+					border: none
+					font-size: 15px
+					padding: 20px 40px
+					text-transform: uppercase
+					cursor: pointer
+					font-family: MC-900
+					background-color: #ed1f24
+					color: white
+					margin-bottom: 20px
+				span
+					color: red		
+					font-size: 22px
+					display: block
+					margin: 20px 0
 			input[type="text"], input[type="mail"]
 				border: 1px solid white
 				background-color: transparent
@@ -1810,7 +1880,6 @@ h6
 			input[type="submit"]
 				background-color: #ed1f24
 				text-align: center
-				transform: translateX(50%)
 
 .dilers__busines
 	padding-top: 170px
@@ -1885,7 +1954,7 @@ h6
 		font-size: 15px
 		margin-top: 20px
 		line-height: 20px
-	strong
+	.akcii__span
 		font-family: MC-700
 		font-size: 18px
 		line-height: 24px

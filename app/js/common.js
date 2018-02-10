@@ -10,6 +10,10 @@ $('document').ready(function() {
     $('.search__input').css('display','inline')
     });
 
+    $('.form__fixed__close').click(function() {
+        $('.form__fixed').css('display','none')
+    })
+
    $(document).mouseup(function (e){ // событие клика по веб-документу
         var div = $(".search__input"); // тут указываем ID элемента
         if (!div.is(e.target) // если клик был не по нашему блоку

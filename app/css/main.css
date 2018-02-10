@@ -3462,6 +3462,79 @@ textarea {
   margin: 0 auto;
 }
 
+.form__fixed {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  text-align: center;
+  display: none;
+}
+
+.form__fixed .form__fixed__block {
+  position: fixed;
+  text-align: center;
+  background-color: white;
+  left: 35%;
+  -webkit-transform: translateY(35%);
+  -ms-transform: translateY(35%);
+  transform: translateY(35%);
+}
+
+.form__fixed .form__fixed__block h2 {
+  color: #f0f0f0;
+  font-family: MC-900;
+  display: block;
+  text-align: center;
+  background-color: #e32424;
+  font-size: 26px;
+  text-transform: uppercase;
+  padding: 30px 0;
+  position: relative;
+}
+
+.form__fixed .form__fixed__block h2 span {
+  position: absolute;
+  right: 3%;
+  cursor: pointer;
+  color: black;
+  text-transform: lowercase;
+  font-family: MC-700;
+  top: 5px;
+}
+
+.form__fixed .form__fixed__block h6 {
+  color: #171717;
+  font-family: MC-700;
+  font-size: 15px;
+  display: block;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.form__fixed .form__fixed__block form {
+  text-align: center;
+}
+
+.form__fixed .form__fixed__block form input[type="text"] {
+  width: 75%;
+  padding: 20px;
+  border: 1px solid black;
+  margin-bottom: 30px;
+}
+
+.form__fixed .form__fixed__block form input[type="submit"] {
+  background-color: #00a651;
+  color: black;
+  padding: 20px 60px;
+  border: none;
+  margin: 40px 0;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
 .search__input {
   display: none;
   position: absolute;
@@ -6135,6 +6208,15 @@ h6 span {
   font-size: 18px;
 }
 
+.footer__wrap .footer__social {
+  margin-top: 25px;
+}
+
+.footer__wrap .footer__social ul li {
+  display: inline-block;
+  margin-right: 14px;
+}
+
 .input__text {
   margin-top: 20px;
 }
@@ -6436,13 +6518,26 @@ h6 span {
 }
 
 .dilers__integral__opt .dilers__integral__form .dilers__form {
-  text-align: left;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
   max-width: 770px;
   margin: 0 auto;
 }
 
-.dilers__integral__opt .dilers__integral__form .dilers__form input {
-  width: 51%;
+.dilers__integral__opt .dilers__integral__form .dilers__form div {
+  width: 48%;
+  margin-right: 10px;
+}
+
+.dilers__integral__opt .dilers__integral__form .dilers__form div input {
+  width: 100%;
   margin-right: 10px;
   border: none;
   font-size: 15px;
@@ -6455,6 +6550,13 @@ h6 span {
   margin-bottom: 20px;
 }
 
+.dilers__integral__opt .dilers__integral__form .dilers__form div span {
+  color: red;
+  font-size: 22px;
+  display: block;
+  margin: 20px 0;
+}
+
 .dilers__integral__opt .dilers__integral__form .dilers__form input[type="text"],
 .dilers__integral__opt .dilers__integral__form .dilers__form input[type="mail"] {
   border: 1px solid white;
@@ -6465,9 +6567,6 @@ h6 span {
 .dilers__integral__opt .dilers__integral__form .dilers__form input[type="submit"] {
   background-color: #ed1f24;
   text-align: center;
-  -webkit-transform: translateX(50%);
-  -ms-transform: translateX(50%);
-  transform: translateX(50%);
 }
 
 .dilers__busines {
@@ -6578,7 +6677,7 @@ h6 span {
   line-height: 20px;
 }
 
-.akcii__left strong {
+.akcii__left .akcii__span {
   font-family: MC-700;
   font-size: 18px;
   line-height: 24px;
