@@ -3364,10 +3364,6 @@ var {
   font-weight: normal;
 }
 
-ul li {
-  list-style: none;
-}
-
 caption,
 th {
   text-align: left;
@@ -4921,12 +4917,11 @@ h6 span {
   margin-bottom: 20px;
 }
 
-.mans__about .mans__wrap .mans__left ol {
+.mans__about .mans__wrap .mans__left ul {
   margin-top: 20px 0;
 }
 
-.mans__about .mans__wrap .mans__left ol li {
-  list-type-style: '';
+.mans__about .mans__wrap .mans__left ul li {
   margin-top: 15px;
   fonst-size: 15px;
   font-family: MC-700;
