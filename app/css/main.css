@@ -4921,9 +4921,13 @@ h6 span {
   margin-bottom: 20px;
 }
 
+.mans__about .mans__wrap .mans__left ol {
+  margin-top: 20px 0;
+}
+
 .mans__about .mans__wrap .mans__left ol li {
   list-type-style: '';
-  margin-top: 20px;
+  margin-top: 15px;
   fonst-size: 15px;
   font-family: MC-700;
   color: black;
