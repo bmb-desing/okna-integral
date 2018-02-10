@@ -4921,6 +4921,14 @@ h6 span {
   margin-bottom: 20px;
 }
 
+.mans__about .mans__wrap .mans__left ol li {
+  list-type-style: '';
+  margin-top: 20px;
+  fonst-size: 15px;
+  font-family: MC-700;
+  color: black;
+}
+
 .mans__about .mans__wrap .mans__left p {
   margin-top: 15px;
   color: #262626;
@@ -4936,7 +4944,6 @@ h6 span {
 }
 
 .mans__about .mans__wrap .mans__left strong {
-  display: block;
   margin-top: 20px;
 }
 
