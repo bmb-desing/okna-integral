@@ -41,6 +41,8 @@ gulp.task('scripts',function(){
     'app/libs/jquery/dist/jquery.min.js',
     'app/libs/owl-carousel/dist/owl.carousel.min.js',
     'app/libs/maskedinput/dist/jquery.maskedinput.min.js',
+    'app/libs/mmenu/dist/jquery.mmenu.all.js',
+    'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js',
     ])
   .pipe(concat('libs.min.js'))
   .pipe(uglify())

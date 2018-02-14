@@ -20,6 +20,9 @@ input, button, textarea
 	margin: 0
 	padding: 0
 
+.my-menu,.hamburger
+	display: none
+
 .main__wrap
 	max-width: 1170px
 	margin: 0 auto
@@ -35,12 +38,15 @@ input, button, textarea
 	left: 0
 	display: none
 	.form__fixed__block
-		width: 30%
 		position: absolute
 		text-align: center
 		background-color: white
-		left: 35%
-		transform: translateY(35%)
+		left: 0
+		right: 0
+		max-width: 500px
+		margin: 0 auto
+		top: 50%
+		transform: translateY(-50%)
 		h2
 			color: #f0f0f0
 			font-family: MC-900
@@ -2060,7 +2066,6 @@ h6
 	display: inline-block
 	margin-bottom: 50px
 	
-
 .inthistory__otzivi
 	background-color: #555555
 	padding: 30px 0
@@ -2223,5 +2228,23 @@ h6
 		border: 1px solid black
 		resize: none
 		overflow: hidden
+
+.popup-gallery a
+	display: none
+
+.popup__window__href
+		text-align: center
+		padding-bottom: 30px
+		a
+			background-color: #ed1f24
+			padding: 20px 100px
+			border: none
+			font-size: 15px
+			text-transform: uppercase
+			color: #fac3c5
+			cursor: pointer
+
+.mfp-title
+	display: none
 
 @import 'media'

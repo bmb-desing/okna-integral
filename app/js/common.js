@@ -58,7 +58,7 @@ $('document').ready(function() {
      });
      //Все для меню окончание , коментируй свой код
 
-    $('.pls__otkos').owlCarousel({
+    /*$('.pls__otkos').owlCarousel({
     loop: true,
     dots: true,
     nav: true,
@@ -78,7 +78,22 @@ $('document').ready(function() {
         },
 
     }
-})
+})*/
+
+//Popup slider
+
+//При клике на ссылку выводится галерея
+$('a.btn-gallery').on('click', function(event) {
+        event.preventDefault();
+
+        $('.popup-gallery').magnificPopup({
+      delegate: 'a',
+            type:'image',
+            gallery: {
+                enabled: true
+            }
+        }).magnificPopup('open');
+    });
 
     $('.index__owl').owlCarousel({
     loop: true,
