@@ -3470,6 +3470,7 @@ textarea {
 }
 
 .form__fixed .form__fixed__block {
+  width: 30%;
   position: absolute;
   text-align: center;
   background-color: white;
