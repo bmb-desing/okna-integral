@@ -3467,6 +3467,7 @@ textarea {
   text-align: center;
   top: 0;
   left: 0;
+  display: none;
 }
 
 .form__fixed .form__fixed__block {
