@@ -8,7 +8,7 @@ $('document').ready(function() {
     //Открытие моадльного конец
     //Закрытие модального окна
     $('.form__fixed__close').click(function() {
-        $('.form__fixed').fadeout();
+        $('.form__fixed').fadeOut();
     });
     $(document).mouseup(function (e) {
         var elem = $('.form__fixed');
