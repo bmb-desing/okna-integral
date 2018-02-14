@@ -3459,16 +3459,18 @@ textarea {
 }
 
 .form__fixed {
-  position: absolute;
+  position: fixed;
   background-color: rgba(0, 0, 0, 0.8);
   width: 100%;
   height: 100%;
   z-index: 1000;
   text-align: center;
+  top: 0;
+  left: 0;
 }
 
 .form__fixed .form__fixed__block {
-  position: fixed;
+  position: absolute;
   text-align: center;
   background-color: white;
   left: 35%;
