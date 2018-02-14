@@ -1,5 +1,24 @@
 $('document').ready(function() {
 
+    //Открытие модального окна
+    $('.header__container--btn button').click(function(e) {
+        e.preventDefault();
+        $('.form__fixed').fadeIn();
+    });
+    //Открытие моадльного конец
+    //Закрытие модального окна
+    $('.form__fixed__close').click(function() {
+        $('.form__fixed').fadeout();
+    });
+    $(document).mouseup(function (e) {
+        var elem = $('.form__fixed');
+        var elems = $('.form__fixed__block');
+        if (!elems.is(e.target)
+            && elems.has(e.target).length === 0) {
+            $('.form__fixed').fadeOut();
+        }
+    });
+    //Закрытие модального окна конец
     $('.inthistory__otzivi span').click(function() {
         $('.inthistory__otzivi span').removeClass('inthistory__active')
         $(this).addClass('inthistory__active')
