@@ -41,6 +41,7 @@ $('document').ready(function() {
         }
     });
 
+
    $('.product__prevnext li').click(function(e) {
     $('.product__prevnext li').removeClass('li__current')
     $(this).addClass('li__current')
@@ -48,7 +49,7 @@ $('document').ready(function() {
 
        // Все для меню
      //Открытие при наведении
-     $('.li__topmenu').hover(function() {
+     $('.li__topmenu, .mm-listview').hover(function() {
          $(this).addClass('hover__menu--li');
          $('.topmenu__products a').css('color', 'white')
          $(this).children('ul').slideDown();    
@@ -56,38 +57,35 @@ $('document').ready(function() {
          $(this).removeClass('hover__menu--li');
          $(this).children('ul').slideUp();
      });
-     //Все для меню окончание , коментируй свой код
 
-    /*$('.pls__otkos').owlCarousel({
-    loop: true,
-    dots: true,
-    nav: true,
-    navText : ['<i class="fa fa-chevron-left"></i>','<i class="fa fa-chevron-right"></i>'],
-    responsive: {
-        0:{
-            items:1
-        },
-        600:{
-            items:1
-        },
-        1000:{
-            items:1
-        },
-         2000:{
-            items:1
-        },
 
-    }
-})*/
+// Менюшка - гамбургер
+    $('#my-menu').mmenu({
+        extensions: [ 'theme-black', 'effect-menu-slide', 'pagedim-black'],
+        navbar: {
+            title: '<img alt="" src="img/logo.png">'
+        },
+        offCanvas: {
+            position: 'right'
+        }
+        
+    });
 
-//Popup slider
+     
+    var ap = $('#my-menu').data('mmenu');
+    ap.bind('open:start', function() {
+        $('.hamburger').addClass('is-active');
+    }).bind('close:finish', function() {
+        $('.hamburger').removeClass('is-active');
+    });
+    //Popup
 
-//При клике на ссылку выводится галерея
-$('a.btn-gallery').on('click', function(event) {
+    //При клике на ссылку выводится галерея
+    $('a.btn-gallery').on('click', function(event) {
         event.preventDefault();
 
         $('.popup-gallery').magnificPopup({
-      delegate: 'a',
+            delegate: 'a',
             type:'image',
             gallery: {
                 enabled: true

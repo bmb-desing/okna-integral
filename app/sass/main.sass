@@ -20,8 +20,24 @@ input, button, textarea
 	margin: 0
 	padding: 0
 
-.my-menu,.hamburger
+.hamburger
 	display: none
+
+.mm-panels > .mm-panel > .mm-listview:first-child, .mm-panels > .mm-panel > .mm-navbar + .mm-listview
+	color: white
+	text-transform: uppercase
+	font-size: 16px
+	font-family: MC-700
+	margin-top: 40px
+
+.mm-menu.mm-theme-black .mm-listview > li .mm-next:after
+	border-color: black
+
+ul.topmenu__products.mm-listview
+	padding-top: 60px
+
+.mm-panel.mm-hasnavbar .mm-navbar
+	border: none
 
 .main__wrap
 	max-width: 1170px
@@ -107,6 +123,10 @@ input, button, textarea
 		right: 10px
 		bottom: 6px
 		cursor: pointer
+
+.mm-listview  li:hover, 
+	color: red
+
 
 .active__menu--li,.hover__menu--li
 	a
@@ -1144,6 +1164,7 @@ h6
 		&__item
 			+col()
 			+col-4()
+			+col-sm-12()
 			margin: 0
 			padding: 0
 			span
@@ -1307,6 +1328,7 @@ h6
 		.dostavka__carefull
 			+col()
 			+col-6()
+			+col-lg-12()
 			margin-left: 10px
 			text-transform: uppercase
 			font-size: 26px
@@ -1318,6 +1340,7 @@ h6
 		.dostavka__constr
 			+col()
 			+col-6()
+			+col-lg-12()
 			p
 				font-size: 15px
 				line-height: 22px
@@ -1430,7 +1453,7 @@ h6
 	padding-bottom: 80px
 	background-image: url(../img/partners.jpg)
 	background-position: center
-	background-size: 100% 100%
+	background-size: cover
 	h6
 		text-transform: uppercase
 		text-align: center
@@ -1448,6 +1471,8 @@ h6
 		div
 			+col()
 			+col-3()
+			+col-lg-6()
+			+col-sm-12()
 			margin: 0
 			text-align: center
 
@@ -1620,7 +1645,6 @@ h6
 					left: 10px
 
 .int__options
-	+offset-padding(2)
 	background-color: #34495d
 	padding-top: 30px
 	padding-bottom: 50px
@@ -1641,7 +1665,6 @@ h6
 
 .footer
 	background-color: #1e2e3d
-	+offset-padding(2)
 	padding-top: 30px
 	padding-bottom: 20px
 	&__wrap
@@ -1672,8 +1695,7 @@ h6
 				display: block
 				margin-top: 6px
 		.wrap__contact
-			+col()
-			+col-3()
+			width: 28%
 			margin: 0
 			color: #d2d2d2
 			padding-top: 65px
@@ -2232,12 +2254,15 @@ h6
 .popup-gallery a
 	display: none
 
+.btn-gallery a
+	outline: none
+
 .popup__window__href
 		text-align: center
 		padding-bottom: 30px
 		a
 			background-color: #ed1f24
-			padding: 20px 100px
+			padding: 20px 24px
 			border: none
 			font-size: 15px
 			text-transform: uppercase
