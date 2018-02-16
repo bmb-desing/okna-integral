@@ -125,30 +125,3 @@ $('.back').click(function() {
 $(".phone").mask("+ 9(999)999-9999");
 
 });
-
-function validateForm() {
-    let textar = document.querySelector('textarea').value
-    let phone = document.querySelector('.phone').value
-    let elem = document.querySelector('.form__error--first')
-    let elem2 = document.querySelector('.form__error--sec')
-    
-
-    if(phone.length < 2) {
-        elem.style.display = 'block'
-        return false
-        } else {
-            elem.style.display = 'none'         
-    } 
-
-    if(textar.length < 10) {
-        elem2.style.display = 'block'
-        return false
-        } else {
-            elem2.style.display = 'none'    
-    }
-
-    if(textar.length > 10 && phone.length > 2) {
-        return true;
-    }
-    
-}
