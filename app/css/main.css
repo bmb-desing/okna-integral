@@ -7819,9 +7819,6 @@ textarea {
 }
 
 .main {
-  padding-left: 30px;
-  padding-right: 30px;
-  margin: 0 auto;
   min-width: 340px;
   margin: 0;
   padding: 0;
@@ -9091,7 +9088,7 @@ h6 span {
   margin: 0;
   position: relative;
   background-position: center;
-  background-size: 100% 100%;
+  background-size: cover;
   height: 350px;
   margin-right: 50px;
   margin-left: 30px;
@@ -10149,7 +10146,7 @@ h6 span {
 .news__wrap .news__block .block__img {
   background-image: url(../img/news1.jpg);
   background-position: center;
-  background-size: 100% 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   min-height: 218px;
 }
@@ -10437,7 +10434,7 @@ h6 span {
   padding-bottom: 130px;
   background-image: url(../img/integmap.jpg);
   background-position: center;
-  background-size: 100% 100%;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -11709,6 +11706,20 @@ h6 span {
 @media only screen and (max-width: 1101px) {
   /**/
 
+  .calc__header {
+    display: block;
+  }
+
+  .calc__right,
+  .calc__left h2 {
+    text-align: center;
+  }
+
+  .calc__right {
+    -webkit-box-shadow: 0 0 0;
+    box-shadow: 0 0 0;
+  }
+
   .partnersenw__wrap .partnersenw__left .parters__listplus__wrap {
     display: inline-block;
     margin-left: 20px;
@@ -11844,11 +11855,6 @@ h6 span {
 }
 
 @media screen and (max-width: 1100px) {
-  .main {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
   .dostavka__wrap .dostavka__carefull {
     width: -webkit-calc(100% - 30px);
     width: calc(100% - 30px);
@@ -11867,6 +11873,17 @@ h6 span {
 
 @media only screen and (max-width: 992px) {
   /**/
+
+  .calc__wrapper {
+    display: block;
+  }
+
+  .calc__left_checks {
+    margin-bottom: 30px;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
 
   .roto__head__wrap,
   .roto__head__wrap .header__axor {
@@ -11895,11 +11912,6 @@ h6 span {
 }
 
 @media screen and (max-width: 960px) {
-  .main {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
   .metall__window .metallwindow__wrap .metallwindow__img {
     width: -webkit-calc(100% - 30px);
     width: calc(100% - 30px);
@@ -11994,11 +12006,6 @@ h6 span {
 }
 
 @media screen and (max-width: 780px) {
-  .main {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
   .products__item {
     width: -webkit-calc(100% - 30px);
     width: calc(100% - 30px);
@@ -12185,11 +12192,6 @@ h6 span {
 }
 
 @media screen and (max-width: 560px) {
-  .main {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
   .axor__plusi div {
     width: -webkit-calc(50% - 30px);
     width: calc(50% - 30px);
@@ -12262,11 +12264,6 @@ h6 span {
 }
 
 @media screen and (max-width: 360px) {
-  .main {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
   .axor__plusi div {
     width: -webkit-calc(100% - 30px);
     width: calc(100% - 30px);

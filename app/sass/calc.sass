@@ -291,4 +291,30 @@
         -moz-border-radius: 10em
         border-radius: 10em
 
-        
+@media only screen and (max-width : 1101px)
+  .calc__header
+    display: block
+  .calc__image
+    box-shadow: none
+@media only screen and (max-width : 992px)
+  /**/
+  .calc__wrapper, .calculator
+    display: block
+  .calc__left_checks,.calc__lists
+    margin-bottom: 30px
+    justify-content: space-around
+@media only screen and (max-width : 768px)
+  /**/
+  .calculator
+    display: block
+  .calculator__item_left
+    margin-bottom: 30px
+
+@media only screen and (max-width : 480px)
+  /**/
+  .calculator__wrapper_top, .calculator__price
+    display: block
+  .calculator__item_center
+    padding-right: 7%
+  .price__item
+    margin-bottom: 35px
