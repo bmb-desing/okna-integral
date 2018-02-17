@@ -178,7 +178,7 @@ function editProgress(width, elem) {
 var price = 0;
 var modify = 0;
 var modifiers = [];
-var callback_window = '';
+var callback_window = 'Качество окна: 0 Вид окна: 0 Окно: 0';
 var active_window = calc[0][0][0]
 function pricing() {
     var price = active_window;
