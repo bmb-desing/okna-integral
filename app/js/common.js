@@ -168,7 +168,7 @@ $(document).ready(function () {
     $('.button__calc').click(function(e) {
         e.preventDefault();
         $('.modal__calc').fadeIn();
-        $('.modal__calc input[name=window]').val('123');
+        $('.modal__calc input[name=window]').val(callback_window);
         $('.modal__calc input[name=modify]').val(modifiers);
     }) 
 });
@@ -191,6 +191,7 @@ function activeWindow() {
     var window = $('.calc__lists li ul li.active').index();
     var status = $('.calc__check.active').index();
     active_window = calc[status][tab][window];
+    callback_window = 'Качество окна: '+status+' Вид окна: '+tab+' Окно: '+window; 
     pricing();
 }
 function addModify(price, mod) {
