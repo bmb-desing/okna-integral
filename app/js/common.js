@@ -155,7 +155,7 @@ $(document).ready(function () {
     //Чекбоксы модификаций
     $('.modify li').click(function () {
        $(this).toggleClass('active');
-       var ind = $('.modify li.active').index();
+       var ind = $(this).index();
        var price = calc[3][ind];
        var mod = $(this).attr('data-modify');
        if($(this).hasClass('active')) {
@@ -195,20 +195,18 @@ function activeWindow() {
     pricing();
 }
 function addModify(price, mod) {
-    var text = $('.price__item_full .price__var span').text();
-    var sum = parseInt(text) + price;
     modify+=price;
+    var sum = active_window + modify;
     modifiers.push(mod);
-    console.log(modifiers);
     $('.price__item_full .price__var span').text(sum);
 }
 function removeModify(price, mod) {
-    var text = $('.price__item_full .price__var span').text();
-    var sum = parseInt(text) - price;
+
     modify-=price;
+    var sum = active_window + modify;
     var findMod = modifiers.indexOf(mod);
     modifiers.splice(findMod, 1);
-    console.log(modifiers);
+
     $('.price__item_full .price__var span').text(sum);
 }
 pricing()
