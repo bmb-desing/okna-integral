@@ -1,4 +1,4 @@
-$('document').ready(function() {
+ $('document').ready(function() {
 
     //Открытие модального окна
     $('.header__container--btn button').click(function(e) {
@@ -72,12 +72,7 @@ $('document').ready(function() {
     });
 
      
-    var ap = $('#my-menu').data('mmenu');
-    ap.bind('open:start', function() {
-        $('.hamburger').addClass('is-active');
-    }).bind('close:finish', function() {
-        $('.hamburger').removeClass('is-active');
-    });
+
     //Popup
 
     //При клике на ссылку выводится галерея
@@ -126,29 +121,93 @@ $(".phone").mask("+ 9(999)999-9999");
 
 });
 
-function validateForm() {
-    let textar = document.querySelector('textarea').value
-    let phone = document.querySelector('.phone').value
-    let elem = document.querySelector('.form__error--first')
-    let elem2 = document.querySelector('.form__error--sec')
-    
-
-    if(phone.length < 2) {
-        elem.style.display = 'block'
-        return false
-        } else {
-            elem.style.display = 'none'         
-    } 
-
-    if(textar.length < 10) {
-        elem2.style.display = 'block'
-        return false
-        } else {
-            elem2.style.display = 'none'    
-    }
-
-    if(textar.length > 10 && phone.length > 2) {
-        return true;
-    }
-    
+$(document).ready(function () {
+    //Калькулятор
+    //Переключение качества
+    $('.calc__check').click(function () {
+        if (!$(this).hasClass('active')) {
+            $('.calc__check').removeClass('active');
+            $(this).addClass('active');
+            var noise = $(this).attr('data-noise');
+            var protect = $(this).attr('data-protect');
+            var sun = $(this).attr('data-sun');
+            var energy = $(this).attr('data-energy');
+            editProgress(noise, 'noise');
+            editProgress(protect, 'protect');
+            editProgress(sun, 'sun');
+            editProgress(energy, 'energy');
+            activeWindow();
+        }
+    })
+    //Переключение изображений
+    $('.calc__lists li ul li').click(function () {
+        if(!$(this).hasClass('active')) {
+            $('.calc__lists li ul li').removeClass('active');
+            $('.calc__lists_item').removeClass('active');
+            var image = $(this).children('img').attr('data-image');
+            var window = $(this).parents('.calc__lists_item');
+            window.addClass('active');
+            $(this).addClass('active');
+            $('.calculator__image').attr('src', image);
+            activeWindow();
+        }
+    })
+    //Чекбоксы модификаций
+    $('.modify li').click(function () {
+       $(this).toggleClass('active');
+       var ind = $('.modify li.active').index();
+       var price = calc[3][ind];
+       var mod = $(this).attr('data-modify');
+       if($(this).hasClass('active')) {
+           addModify(price, mod);
+       }
+       else {
+           removeModify(price, mod);
+       }
+    });
+    $('.button__calc').click(function(e) {
+        e.preventDefault();
+        $('.modal__calc').fadeIn();
+        $('.modal__calc input[name=window]').val('123');
+        $('.modal__calc input[name=modify]').val(modifiers);
+    }) 
+});
+function editProgress(width, elem) {
+    $('.calculator__progress_'+elem).children('.progress').children('span').css('width', width+'%')
 }
+var price = 0;
+var modify = 0;
+var modifiers = [];
+var callback_window = '';
+var active_window = calc[0][0][0]
+function pricing() {
+    var price = active_window;
+    var full_price = active_window+modify;
+    $('.price__item_empty .price__var span').text(price);
+    $('.price__item_full .price__var span').text(full_price);
+}
+function activeWindow() {
+    var tab = $('.calc__lists_item.active').index();
+    var window = $('.calc__lists li ul li.active').index();
+    var status = $('.calc__check.active').index();
+    active_window = calc[status][tab][window];
+    pricing();
+}
+function addModify(price, mod) {
+    var text = $('.price__item_full .price__var span').text();
+    var sum = parseInt(text) + price;
+    modify+=price;
+    modifiers.push(mod);
+    console.log(modifiers);
+    $('.price__item_full .price__var span').text(sum);
+}
+function removeModify(price, mod) {
+    var text = $('.price__item_full .price__var span').text();
+    var sum = parseInt(text) - price;
+    modify-=price;
+    var findMod = modifiers.indexOf(mod);
+    modifiers.splice(findMod, 1);
+    console.log(modifiers);
+    $('.price__item_full .price__var span').text(sum);
+}
+pricing()

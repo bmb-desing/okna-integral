@@ -9139,12 +9139,14 @@ h6 span {
   padding-bottom: 45px;
 }
 
-.header__container--btn {
+.header__container--btn,
+.button__calc {
   text-align: center;
   padding-bottom: 30px;
 }
 
-.header__container--btn button {
+.header__container--btn button,
+.button__calc button {
   background-color: #ed1f24;
   padding: 20px 100px;
   border: none;
