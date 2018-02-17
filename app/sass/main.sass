@@ -454,6 +454,10 @@ h6
 	max-width: 1170px
 	padding-bottom: 60px
 	div
+		+col-xs-6()
+		+col-ms-12()
+		margin: 0
+		margin-bottom: 10px
 		text-align: center
 		span
 			display: block
@@ -870,7 +874,9 @@ h6
 		div
 			+col()
 			+col-4()
+			+col-xs-12()
 			margin: 0
+			margin-bottom: 25px
 			color: #262626
 			font-family: MC-500
 			font-size: 15px
@@ -889,10 +895,14 @@ h6
 		.metallwindow__img
 			+col()
 			+col-3()
+			+col-md-12()
+			text-align: center
 			margin: 0
 		.metallwindow__discript
 			+col()
 			+col-6()
+			+col-md-12()
+			text-align: center
 			margin: 0
 			padding-top: 50px
 			p
@@ -1856,6 +1866,8 @@ h6
 		.dilers__opt__block
 			+col()
 			+col-4()
+			+col-sm-6()
+			+col-xs-12()
 			margin: 0
 			text-align: center
 			margin-bottom: 60px
@@ -1886,6 +1898,8 @@ h6
 			margin: 0 auto
 			div
 				width: 48%
+				+col-xs-12()
+				margin: 0
 				margin-right: 10px
 				input
 					width: 100%
@@ -1938,6 +1952,7 @@ h6
 				font-family: MC-900
 				font-size: 18px
 				text-transform: uppercase
+				position: relative
 			img
 				height: 215px
 

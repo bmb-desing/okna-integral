@@ -119,6 +119,7 @@ $('.back').click(function() {
 
 $(".phone").mask("+ 9(999)999-9999");
 
+<<<<<<< HEAD
 });
 
 $(document).ready(function () {
@@ -211,3 +212,6 @@ function removeModify(price, mod) {
     $('.price__item_full .price__var span').text(sum);
 }
 pricing()
+=======
+});
+>>>>>>> a7aa55102dbb447f2d5c384ba3854727c1ee7723

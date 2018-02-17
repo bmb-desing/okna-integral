@@ -8531,6 +8531,8 @@ h6 span {
 }
 
 .axor__plusi div {
+  margin: 0;
+  margin-bottom: 10px;
   text-align: center;
 }
 
@@ -9220,6 +9222,7 @@ h6 span {
   width: -webkit-calc(33.333333333333336% - 30px);
   width: calc(33.333333333333336% - 30px);
   margin: 0;
+  margin-bottom: 25px;
   color: #262626;
   font-family: MC-500;
   font-size: 15px;
@@ -9262,6 +9265,7 @@ h6 span {
   word-wrap: break-word;
   width: -webkit-calc(25% - 30px);
   width: calc(25% - 30px);
+  text-align: center;
   margin: 0;
 }
 
@@ -9273,6 +9277,7 @@ h6 span {
   word-wrap: break-word;
   width: -webkit-calc(50% - 30px);
   width: calc(50% - 30px);
+  text-align: center;
   margin: 0;
   padding-top: 50px;
 }
@@ -10936,6 +10941,7 @@ h6 span {
 
 .dilers__integral__opt .dilers__integral__form .dilers__form div {
   width: 48%;
+  margin: 0;
   margin-right: 10px;
 }
 
@@ -11020,6 +11026,7 @@ h6 span {
   font-family: MC-900;
   font-size: 18px;
   text-transform: uppercase;
+  position: relative;
 }
 
 .dilers__busines .dilers__busines__flex .busines__contain__box img {
@@ -11702,8 +11709,51 @@ h6 span {
 @media only screen and (max-width: 1101px) {
   /**/
 
+  .partnersenw__wrap .partnersenw__left .parters__listplus__wrap {
+    display: inline-block;
+    margin-left: 20px;
+  }
+
+  .partnersenw__wrap {
+    display: block;
+    text-align: center;
+  }
+
+  .partners__withoutshadow,
+  .partnersenw__wrap .partnersenw__left .parters__listplus__wrap span {
+    margin-left: 0;
+  }
+
+  .roto__predmets .furn__wrap .roto__predmets__list ul li {
+    width: 50%;
+    margin-bottom: 15px;
+    list-style-type: none;
+  }
+
+  .axor__category__wrap {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .axor__category--left {
+    margin-bottom: 20px;
+  }
+
+  .dilers__about__cex .dilers__product__price .dilers__price__block {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .header__container--mans h2 {
+    text-align: center;
+    font-size: 35px;
+  }
+
   .mans__about .mans__wrap .image__right,
-  .mans__about .mans__wrap .image__left {
+  .mans__about .mans__wrap .image__left,
+  .axor__wrap .axor__furnityrablock .mans__image {
     float: none;
     display: block;
     margin: 0 auto;
@@ -11817,12 +11867,47 @@ h6 span {
 
 @media only screen and (max-width: 992px) {
   /**/
+
+  .roto__head__wrap,
+  .roto__head__wrap .header__axor {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .axor__wrap .axor__furnityrablock .axor__left {
+    width: 100%;
+  }
+
+  .contactspage__header h2 {
+    text-align: center;
+    font-size: 33px;
+  }
+
+  .dilers__integral__opt .dilers__integral__form {
+    text-align: center;
+  }
+
+  .dilers__busines .dilers__busines__flex .busines__contain__box {
+    margin-bottom: 15px;
+    width: 30%;
+  }
 }
 
 @media screen and (max-width: 960px) {
   .main {
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  .metall__window .metallwindow__wrap .metallwindow__img {
+    width: -webkit-calc(100% - 30px);
+    width: calc(100% - 30px);
+  }
+
+  .metall__window .metallwindow__wrap .metallwindow__discript {
+    width: -webkit-calc(100% - 30px);
+    width: calc(100% - 30px);
   }
 }
 
@@ -11923,19 +12008,104 @@ h6 span {
     width: -webkit-calc(100% - 30px);
     width: calc(100% - 30px);
   }
+
+  .dilers__integral__opt .dilers__opt__wrap .dilers__opt__block {
+    width: -webkit-calc(50% - 30px);
+    width: calc(50% - 30px);
+  }
 }
 
 @media only screen and (max-width: 768px) {
   /**/
 
+  .search__results {
+    text-align: center;
+  }
+
+  .header__partners--btn .partners__btn--transpar,
+  .header__partners--btn button {
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+
+  .otzivi__form input,
+  .otzivi__form textarea {
+    width: 100%;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+
+  .otzivi__content .otzivi__wrap--left,
+  .otzivi__content .otzivi__wrap--right,
+  .job__discript .first__part .our__service,
+  .axor__products--left .axor__leftright__wrap,
+  .axor__products--right .axor__leftright__wrap,
+  .int__options .opt__wrap .opt__ul,
+  .partnersenw__discription--left,
+  .partnersenw__discription--center,
+  .partnersenw__discription--right {
+    width: 100%;
+  }
+
+  .osteklenie__info .osteklenie__info--variants {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .installmont__workabout .installmont__wrap .installmont__worksdiscript {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .installmont__content .install__cont__wrap .install__cont__block {
+    margin-bottom: 60px;
+    width: 100%;
+  }
+
+  .roto__realize .realize__wrap h6 {
+    text-align: center;
+    float: none;
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+
+  .axor__category__wrap .axor__category--left ul li a {
+    font-size: 15px;
+  }
+
+  .header__container--btn button {
+    padding: 20px 40px;
+  }
+
+  .dilers__busines .dilers__busines__flex .busines__contain__box div p {
+    position: absolute;
+    position-left: 50%;
+    position-top: 50%;
+    position-transform: translate(-50%, -50%);
+  }
+
+  .header__balckblock {
+    padding: 100px 0;
+  }
+
+  .header__container--mans h2,
+  .header__balckblock h2 {
+    font-size: 28px;
+  }
+
+  .akcii__head__span {
+    font-size: 25px;
+  }
+
+  .akcii__content__h2 {
+    font-size: 35px;
+  }
+
   .footer__wrap .foot__logo,
   .footer__wrap .wrap__prava,
   .footer__wrap .wrap__contact {
     text-align: center;
-    width: 100%;
-  }
-
-  .int__options .opt__wrap .opt__ul {
     width: 100%;
   }
 
@@ -12005,10 +12175,6 @@ h6 span {
     font-size: 18;
   }
 
-  .job__discript .first__part .our__service {
-    width: 100%;
-  }
-
   .products__item {
     margin-bottom: 30px;
   }
@@ -12023,10 +12189,60 @@ h6 span {
     padding-left: 15px;
     padding-right: 15px;
   }
+
+  .axor__plusi div {
+    width: -webkit-calc(50% - 30px);
+    width: calc(50% - 30px);
+  }
+
+  .metall__cloud .metallcl__wrap div {
+    width: -webkit-calc(100% - 30px);
+    width: calc(100% - 30px);
+  }
+
+  .dilers__integral__opt .dilers__opt__wrap .dilers__opt__block {
+    width: -webkit-calc(100% - 30px);
+    width: calc(100% - 30px);
+  }
+
+  .dilers__integral__opt .dilers__integral__form .dilers__form div {
+    width: -webkit-calc(100% - 30px);
+    width: calc(100% - 30px);
+  }
 }
 
 @media only screen and (max-width: 480px) {
   /**/
+
+  .roto__predmets .furn__wrap .roto__predmets__list ul li {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .axor__category__wrap .axor__category--left ul li {
+    margin-bottom: 12px;
+  }
+
+  .axor__category--left {
+    text-align: center;
+  }
+
+  .axor__category--right {
+    display: block;
+  }
+
+  .axor__category--right span {
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .dilers__busines .dilers__busines__flex .busines__contain__box {
+    width: 52%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
 
   .integral h1 {
     font-size: 30px;
@@ -12049,6 +12265,11 @@ h6 span {
   .main {
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  .axor__plusi div {
+    width: -webkit-calc(100% - 30px);
+    width: calc(100% - 30px);
   }
 }
 
