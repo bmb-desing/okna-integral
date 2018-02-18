@@ -11753,7 +11753,8 @@ h6 span {
   }
 
   .dilers__about__cex .dilers__product__price .dilers__price__block {
-    width: 100%;
+    width: 75%;
+    margin: 0 auto;
     margin-bottom: 30px;
   }
 
@@ -11874,15 +11875,8 @@ h6 span {
 @media only screen and (max-width: 992px) {
   /**/
 
-  .calc__wrapper {
-    display: block;
-  }
-
-  .calc__left_checks {
-    margin-bottom: 30px;
-    -webkit-justify-content: space-around;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
+  .error__dig {
+    font-size: 300px;
   }
 
   .roto__head__wrap,
@@ -12024,6 +12018,20 @@ h6 span {
 
 @media only screen and (max-width: 768px) {
   /**/
+
+  .dilers__about__cex .dilers__product__price .dilers__price__block {
+    width: 100%;
+  }
+
+  .ostekl__choise__wrap .ostekl__choise--left,
+  .ostekl__choise__wrap .ostekl__choise--right {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  .error__dig {
+    font-size: 180px;
+  }
 
   .search__results {
     text-align: center;
@@ -12215,6 +12223,10 @@ h6 span {
 
 @media only screen and (max-width: 480px) {
   /**/
+
+  .error__dig {
+    font-size: 115px;
+  }
 
   .roto__predmets .furn__wrap .roto__predmets__list ul li {
     width: 100%;
