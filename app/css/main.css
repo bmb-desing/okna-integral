@@ -7837,8 +7837,13 @@ textarea {
   margin-top: 40px;
 }
 
+.content__menu .li__topmenu a:after {
+  display: none;
+}
+
 .mm-menu.mm-theme-black .mm-listview > li .mm-next:after {
   border-color: black;
+  display: block;
 }
 
 ul.topmenu__products.mm-listview {
@@ -12144,6 +12149,19 @@ h6 span {
     display: block;
   }
 
+  .hamburger-inner,
+  .hamburger-inner:before,
+  .hamburger-inner:after {
+    background-color: red;
+  }
+
+  .header__menu .menu__left {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
   .menu__left ul {
     display: none;
     margin-bottom: 30px;
@@ -12223,6 +12241,10 @@ h6 span {
 
 @media only screen and (max-width: 480px) {
   /**/
+
+  .contacts {
+    padding: 0;
+  }
 
   .error__dig {
     font-size: 115px;
