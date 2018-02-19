@@ -10148,12 +10148,8 @@ h6 span {
   background-color: #efefef;
 }
 
-.news__wrap .news__block .block__img {
-  background-image: url(../img/news1.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 218px;
+.news__wrap .news__block .block__img img {
+  width: 100%;
 }
 
 .news__wrap .news__block .block__other {
@@ -11711,6 +11707,27 @@ h6 span {
 @media only screen and (max-width: 1101px) {
   /**/
 
+  .ostekl__obj--btn {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+  }
+
+  .mans__about h1,
+  .mans__about h2,
+  .mans__about h3,
+  .mans__about h4 {
+    text-align: center;
+  }
+
+  .news__wrap {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+
   .calc__header {
     display: block;
   }
@@ -11904,7 +11921,12 @@ h6 span {
     text-align: center;
   }
 
+  .dilers__busines .dilers__busines__flex {
+    display: block;
+  }
+
   .dilers__busines .dilers__busines__flex .busines__contain__box {
+    margin: 0 auto;
     margin-bottom: 15px;
     width: 30%;
   }
@@ -12024,6 +12046,20 @@ h6 span {
 @media only screen and (max-width: 768px) {
   /**/
 
+  .dilers__integral__opt .dilers__integral__form .dilers__form div {
+    width: 100%;
+    margin: 0 3px;
+  }
+
+  .dilers__busines .dilers__busines__flex .busines__contain__box div,
+  .dilers__busines .dilers__busines__flex .busines__contain__box img {
+    height: inherit;
+  }
+
+  .news__wrap {
+    width: 70%;
+  }
+
   .dilers__about__cex .dilers__product__price .dilers__price__block {
     width: 100%;
   }
@@ -12096,13 +12132,6 @@ h6 span {
 
   .header__container--btn button {
     padding: 20px 40px;
-  }
-
-  .dilers__busines .dilers__busines__flex .busines__contain__box div p {
-    position: absolute;
-    position-left: 50%;
-    position-top: 50%;
-    position-transform: translate(-50%, -50%);
   }
 
   .header__balckblock {
@@ -12232,15 +12261,14 @@ h6 span {
     width: -webkit-calc(100% - 30px);
     width: calc(100% - 30px);
   }
-
-  .dilers__integral__opt .dilers__integral__form .dilers__form div {
-    width: -webkit-calc(100% - 30px);
-    width: calc(100% - 30px);
-  }
 }
 
 @media only screen and (max-width: 480px) {
   /**/
+
+  .news__wrap {
+    width: 100%;
+  }
 
   .contacts {
     padding: 0;
@@ -12421,5 +12449,18 @@ h6 span {
     transform: translate(-140px, 0);
     -webkit-transform: translate3d(-140px, 0, 0);
     transform: translate3d(-140px, 0, 0);
+  }
+}
+
+@media only screen and (max-height: 735px) {
+  .form__fixed {
+    overflow-y: scroll;
+  }
+
+  .form__fixed .form__fixed__block {
+    top: 0;
+    -webkit-transform: translate(0);
+    -ms-transform: translate(0);
+    transform: translate(0);
   }
 }

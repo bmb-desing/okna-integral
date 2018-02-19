@@ -28,6 +28,18 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1101px)
 	/**/
+	.ostekl__obj--btn
+		display: block
+		text-align: center
+		margin: 0 auto
+		width: 50%
+	.mans__about h1, .mans__about h2, .mans__about h3, .mans__about h4,
+		text-align: center
+	.news__wrap
+		width: 50%
+		display: block
+		margin: 0 auto
+		margin-top: 50px
 	.calc__header
 		display: block
 	.calc__right, .calc__left h2
@@ -124,13 +136,23 @@
 		font-size: 33px
 	.dilers__integral__opt .dilers__integral__form
 		text-align: center
+	.dilers__busines .dilers__busines__flex
+		display: block
 	.dilers__busines .dilers__busines__flex .busines__contain__box
+		margin: 0 auto
 		margin-bottom: 15px
 		width: 30%
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 	/**/
+	.dilers__integral__opt .dilers__integral__form .dilers__form div
+		width: 100%
+		margin: 0 3px
+	.dilers__busines .dilers__busines__flex .busines__contain__box div, .dilers__busines .dilers__busines__flex .busines__contain__box img
+		height: inherit
+	.news__wrap
+		width: 70%
 	.dilers__about__cex .dilers__product__price .dilers__price__block
 		width: 100%
 	.ostekl__choise__wrap .ostekl__choise--left, .ostekl__choise__wrap .ostekl__choise--right
@@ -168,11 +190,6 @@
 		font-size: 15px
 	.header__container--btn button
 		padding: 20px 40px
-	.dilers__busines .dilers__busines__flex .busines__contain__box div p
-		position: absolute
-    left: 50%
-    top: 50%
-    transform: translate(-50%, -50%)
 	.header__balckblock
 		padding: 100px 0
 	.header__container--mans h2, .header__balckblock h2
@@ -229,12 +246,12 @@
 		margin-bottom: 30px
 	.hamburger
 		display: block
-	
-
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 	/**/
+	.news__wrap
+		width: 100%
 	.contacts
 		padding: 0
 	.error__dig
@@ -271,3 +288,9 @@
 	/**/
 
 /* small */
+@media only screen and (max-height : 735px)
+	.form__fixed
+		overflow-y: scroll
+	.form__fixed .form__fixed__block
+		top: 0
+		transform: translate(0)
