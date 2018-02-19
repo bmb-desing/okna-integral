@@ -155,7 +155,7 @@ $(document).ready(function () {
     //Чекбоксы модификаций
     $('.modify li').click(function () {
        $(this).toggleClass('active');
-       var ind = $('.modify li.active').index();
+       var ind = $(this).index();
        var price = calc[3][ind];
        var mod = $(this).attr('data-modify');
        if($(this).hasClass('active')) {
@@ -168,7 +168,7 @@ $(document).ready(function () {
     $('.button__calc').click(function(e) {
         e.preventDefault();
         $('.modal__calc').fadeIn();
-        $('.modal__calc input[name=window]').val('123');
+        $('.modal__calc input[name=window]').val(callback_window);
         $('.modal__calc input[name=modify]').val(modifiers);
     }) 
 });
@@ -178,7 +178,7 @@ function editProgress(width, elem) {
 var price = 0;
 var modify = 0;
 var modifiers = [];
-var callback_window = '';
+var callback_window = 'Качество окна: 0 Вид окна: 0 Окно: 0';
 var active_window = calc[0][0][0]
 function pricing() {
     var price = active_window;
@@ -191,23 +191,22 @@ function activeWindow() {
     var window = $('.calc__lists li ul li.active').index();
     var status = $('.calc__check.active').index();
     active_window = calc[status][tab][window];
+    callback_window = 'Качество окна: '+status+' Вид окна: '+tab+' Окно: '+window; 
     pricing();
 }
 function addModify(price, mod) {
-    var text = $('.price__item_full .price__var span').text();
-    var sum = parseInt(text) + price;
     modify+=price;
+    var sum = active_window + modify;
     modifiers.push(mod);
-    console.log(modifiers);
     $('.price__item_full .price__var span').text(sum);
 }
 function removeModify(price, mod) {
-    var text = $('.price__item_full .price__var span').text();
-    var sum = parseInt(text) - price;
+
     modify-=price;
+    var sum = active_window + modify;
     var findMod = modifiers.indexOf(mod);
     modifiers.splice(findMod, 1);
-    console.log(modifiers);
+
     $('.price__item_full .price__var span').text(sum);
 }
 pricing()
