@@ -9645,7 +9645,7 @@ h6 span {
   margin-bottom: 55px;
 }
 
-.header__container button {
+.header__container a {
   background-color: #ed1f24;
   padding: 20px 40px;
   border: none;
